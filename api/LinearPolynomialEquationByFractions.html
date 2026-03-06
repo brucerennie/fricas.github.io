@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,13 +45,13 @@
             
   <section id="linearpolynomialequationbyfractions-r">
 <span id="l4c696e656172506f6c796e6f6d69616c4571756174696f6e42794672616374696f6e73"></span><span id="index-0"></span><h1>LinearPolynomialEquationByFractions R<a class="headerlink" href="#linearpolynomialequationbyfractions-r" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/fraction.spad#L552">fraction.spad line 552</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/fraction.spad#L552">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/fraction.spad#L552">fraction.spad line 552</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/fraction.spad#L552">[edit on github]</a></p>
 <ul class="simple">
 <li><p>R: <a class="reference internal" href="PolynomialFactorizationExplicit.html#l506f6c796e6f6d69616c466163746f72697a6174696f6e4578706c69636974"><span class="std std-ref">PolynomialFactorizationExplicit</span></a></p></li>
 </ul>
-<p>Given a PolynomialFactorizationExplicit ring, this package provides a defaulting rule for the <code class="docutils literal notranslate"><span class="pre">solveLinearPolynomialEquation</span></code> operation, by moving into the field of fractions, and solving it there via the <code class="docutils literal notranslate"><span class="pre">multiEuclidean</span></code> operation.</p>
+<p>Given a PolynomialFactorizationExplicit ring, this package provides a defaulting rule for the <code class="code docutils literal notranslate"><span class="pre">solveLinearPolynomialEquation</span></code> operation, by moving into the field of fractions, and solving it there via the <code class="code docutils literal notranslate"><span class="pre">multiEuclidean</span></code> operation.</p>
 <span id="l4c696e656172506f6c796e6f6d69616c4571756174696f6e42794672616374696f6e73-736f6c76654c696e656172506f6c796e6f6d69616c4571756174696f6e42794672616374696f6e73"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">solveLinearPolynomialEquationByFractions</span>: (<a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> <a class="reference internal" href="SparseUnivariatePolynomial.html#l537061727365556e6976617269617465506f6c796e6f6d69616c"><span class="std std-ref">SparseUnivariatePolynomial</span></a> R, <a class="reference internal" href="SparseUnivariatePolynomial.html#l537061727365556e6976617269617465506f6c796e6f6d69616c"><span class="std std-ref">SparseUnivariatePolynomial</span></a> R) -&gt; Union(<a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> <a class="reference internal" href="SparseUnivariatePolynomial.html#l537061727365556e6976617269617465506f6c796e6f6d69616c"><span class="std std-ref">SparseUnivariatePolynomial</span></a> R, failed)</dt><dd><p><code class="docutils literal notranslate"><span class="pre">solveLinearPolynomialEquationByFractions([f1,</span> <span class="pre">...,</span> <span class="pre">fn],</span> <span class="pre">g)</span></code> (where the <code class="docutils literal notranslate"><span class="pre">fi</span></code> are relatively prime to each other) returns a list of <code class="docutils literal notranslate"><span class="pre">ai</span></code> such that <code class="docutils literal notranslate"><span class="pre">g/prod</span> <span class="pre">fi</span> <span class="pre">=</span> <span class="pre">sum</span> <span class="pre">ai/fi</span></code> or returns “failed” if no such exists.</p>
+<dt><span class="spadfun">solveLinearPolynomialEquationByFractions</span>: (<a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> <a class="reference internal" href="SparseUnivariatePolynomial.html#l537061727365556e6976617269617465506f6c796e6f6d69616c"><span class="std std-ref">SparseUnivariatePolynomial</span></a> R, <a class="reference internal" href="SparseUnivariatePolynomial.html#l537061727365556e6976617269617465506f6c796e6f6d69616c"><span class="std std-ref">SparseUnivariatePolynomial</span></a> R) -&gt; Union(<a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> <a class="reference internal" href="SparseUnivariatePolynomial.html#l537061727365556e6976617269617465506f6c796e6f6d69616c"><span class="std std-ref">SparseUnivariatePolynomial</span></a> R, failed)</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">solveLinearPolynomialEquationByFractions([f1,</span> <span class="pre">...,</span> <span class="pre">fn],</span> <span class="pre">g)</span></code> (where the <code class="code docutils literal notranslate"><span class="pre">fi</span></code> are relatively prime to each other) returns a list of <code class="code docutils literal notranslate"><span class="pre">ai</span></code> such that <code class="code docutils literal notranslate"><span class="pre">g/prod</span> <span class="pre">fi</span> <span class="pre">=</span> <span class="pre">sum</span> <span class="pre">ai/fi</span></code> or returns “failed” if no such list exists.</p>
 </dd>
 </dl>
 </section>
@@ -68,6 +68,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -108,7 +109,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

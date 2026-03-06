@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="palette">
 <span id="l50616c65747465"></span><span id="index-0"></span><h1>Palette<a class="headerlink" href="#palette" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/color.spad#L95">color.spad line 95</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/color.spad#L95">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/color.spad#L94">color.spad line 94</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/color.spad#L94">[edit on github]</a></p>
 <p>This domain describes four groups of color shades (palettes).</p>
 <dl class="simple" id="l50616c65747465-3d">
 <dt><a class="reference internal" href="BasicType.html#l426173696354797065-3d"><span class="std std-ref">=</span></a>: (%, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>from <a class="reference internal" href="BasicType.html#l426173696354797065"><span class="std std-ref">BasicType</span></a></p>
@@ -56,7 +56,7 @@
 </dd>
 </dl>
 <span id="l50616c65747465-627269676874"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">bright</span>: <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a> -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">bright(c)</span></code> sets the shade of a hue, <code class="docutils literal notranslate"><span class="pre">c</span></code>, above dim, but below pastel.</p>
+<dt><span class="spadfun">bright</span>: <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a> -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">bright(c)</span></code> sets the shade of a hue, <code class="code docutils literal notranslate"><span class="pre">c</span></code>, above dim, but below pastel.</p>
 </dd>
 </dl>
 <dl class="simple" id="l50616c65747465-636f65726365">
@@ -64,19 +64,19 @@
 </dd>
 </dl>
 <dl class="simple" id="index-2">
-<dt><span class="spadfun">coerce</span>: <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a> -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">coerce(c)</span></code> sets the average shade for the palette to that of the indicated color <code class="docutils literal notranslate"><span class="pre">c</span></code>.</p>
+<dt><span class="spadfun">coerce</span>: <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a> -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">coerce(c)</span></code> sets the average shade for the palette to that of the indicated color <code class="code docutils literal notranslate"><span class="pre">c</span></code>.</p>
 </dd>
 </dl>
 <span id="l50616c65747465-6461726b"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">dark</span>: <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a> -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">dark(c)</span></code> sets the shade of the indicated hue of <code class="docutils literal notranslate"><span class="pre">c</span></code> to it<code class="docutils literal notranslate"><span class="pre">'s</span></code> lowest value.</p>
+<dt><span class="spadfun">dark</span>: <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a> -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">dark(c)</span></code> sets the shade of the indicated hue of <code class="code docutils literal notranslate"><span class="pre">c</span></code> to its lowest value.</p>
 </dd>
 </dl>
 <span id="l50616c65747465-64696d"></span><dl class="simple" id="index-4">
-<dt><span class="spadfun">dim</span>: <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a> -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">dim(c)</span></code> sets the shade of a hue, <code class="docutils literal notranslate"><span class="pre">c</span></code>, above dark, but below bright.</p>
+<dt><span class="spadfun">dim</span>: <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a> -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">dim(c)</span></code> sets the shade of a hue, <code class="code docutils literal notranslate"><span class="pre">c</span></code>, above dark, but below bright.</p>
 </dd>
 </dl>
 <span id="l50616c65747465-687565"></span><dl class="simple" id="index-5">
-<dt><span class="spadfun">hue</span>: % -&gt; <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">hue(p)</span></code> returns the hue field of the indicated palette <code class="docutils literal notranslate"><span class="pre">p</span></code>.</p>
+<dt><span class="spadfun">hue</span>: % -&gt; <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">hue(p)</span></code> returns the hue field of the indicated palette <code class="code docutils literal notranslate"><span class="pre">p</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="l50616c65747465-6c61746578">
@@ -84,15 +84,15 @@
 </dd>
 </dl>
 <span id="l50616c65747465-6c69676874"></span><dl class="simple" id="index-6">
-<dt><span class="spadfun">light</span>: <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a> -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">light(c)</span></code> sets the shade of a hue, <code class="docutils literal notranslate"><span class="pre">c</span></code>, to it<code class="docutils literal notranslate"><span class="pre">'s</span></code> highest value.</p>
+<dt><span class="spadfun">light</span>: <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a> -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">light(c)</span></code> sets the shade of a hue, <code class="code docutils literal notranslate"><span class="pre">c</span></code>, to its highest value.</p>
 </dd>
 </dl>
 <span id="l50616c65747465-70617374656c"></span><dl class="simple" id="index-7">
-<dt><span class="spadfun">pastel</span>: <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a> -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">pastel(c)</span></code> sets the shade of a hue, <code class="docutils literal notranslate"><span class="pre">c</span></code>, above bright, but below light.</p>
+<dt><span class="spadfun">pastel</span>: <a class="reference internal" href="Color.html#l436f6c6f72"><span class="std std-ref">Color</span></a> -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">pastel(c)</span></code> sets the shade of a hue, <code class="code docutils literal notranslate"><span class="pre">c</span></code>, above bright, but below light.</p>
 </dd>
 </dl>
 <span id="l50616c65747465-7368616465"></span><dl class="simple" id="index-8">
-<dt><span class="spadfun">shade</span>: % -&gt; <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">shade(p)</span></code> returns the shade index of the indicated palette <code class="docutils literal notranslate"><span class="pre">p</span></code>.</p>
+<dt><span class="spadfun">shade</span>: % -&gt; <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">shade(p)</span></code> returns the shade index of the indicated palette <code class="code docutils literal notranslate"><span class="pre">p</span></code>.</p>
 </dd>
 </dl>
 <p><a class="reference internal" href="BasicType.html#l426173696354797065"><span class="std std-ref">BasicType</span></a></p>
@@ -112,6 +112,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -152,7 +153,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="fourierseries-r-e">
 <span id="l466f7572696572536572696573"></span><span id="index-0"></span><h1>FourierSeries(R, E)<a class="headerlink" href="#fourierseries-r-e" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/fourier.spad#L41">fourier.spad line 41</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/fourier.spad#L41">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/fourier.spad#L41">fourier.spad line 41</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/fourier.spad#L41">[edit on github]</a></p>
 <ul class="simple">
 <li><p>R: Join(<a class="reference internal" href="CommutativeRing.html#l436f6d6d7574617469766552696e67"><span class="std std-ref">CommutativeRing</span></a>, <a class="reference internal" href="Algebra.html#l416c6765627261"><span class="std std-ref">Algebra</span></a> <a class="reference internal" href="Fraction.html#l4672616374696f6e"><span class="std std-ref">Fraction</span></a> <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a>)</p></li>
 <li><p>E: Join(<a class="reference internal" href="OrderedSet.html#l4f726465726564536574"><span class="std std-ref">OrderedSet</span></a>, <a class="reference internal" href="AbelianGroup.html#l4162656c69616e47726f7570"><span class="std std-ref">AbelianGroup</span></a>)</p></li>
@@ -118,13 +118,13 @@
 </dd>
 </dl>
 <dl class="simple" id="index-1">
-<dt><span class="spadfun">coerce</span>: <a class="reference internal" href="FourierComponent.html#l466f7572696572436f6d706f6e656e74"><span class="std std-ref">FourierComponent</span></a> E -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">coerce(c)</span></code> converts sin/cos terms into Fourier Series</p>
+<dt><span class="spadfun">coerce</span>: <a class="reference internal" href="FourierComponent.html#l466f7572696572436f6d706f6e656e74"><span class="std std-ref">FourierComponent</span></a> E -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">coerce(c)</span></code> converts sin/cos terms into Fourier Series</p>
 </dd>
 <dt><a class="reference internal" href="NonAssociativeRing.html#l4e6f6e4173736f6369617469766552696e67-636f65726365"><span class="std std-ref">coerce</span></a>: <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a> -&gt; %</dt><dd><p>from <a class="reference internal" href="NonAssociativeRing.html#l4e6f6e4173736f6369617469766552696e67"><span class="std std-ref">NonAssociativeRing</span></a></p>
 </dd>
 </dl>
 <dl class="simple" id="index-2">
-<dt><span class="spadfun">coerce</span>: R -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">coerce(r)</span></code> converts coefficients into Fourier Series</p>
+<dt><span class="spadfun">coerce</span>: R -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">coerce(r)</span></code> converts coefficients into Fourier Series</p>
 </dd>
 </dl>
 <dl class="simple" id="l466f7572696572536572696573-636f6d6d757461746f72">
@@ -146,11 +146,11 @@
 </dd>
 </dl>
 <span id="l466f7572696572536572696573-6d616b65436f73"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">makeCos</span>: (E, R) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">makeCos(e,</span> <span class="pre">r)</span></code> makes a sin expression with given argument and coefficient</p>
+<dt><span class="spadfun">makeCos</span>: (E, R) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">makeCos(e,</span> <span class="pre">r)</span></code> makes a cos expression with given argument and coefficient</p>
 </dd>
 </dl>
 <span id="l466f7572696572536572696573-6d616b6553696e"></span><dl class="simple" id="index-4">
-<dt><span class="spadfun">makeSin</span>: (E, R) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">makeSin(e,</span> <span class="pre">r)</span></code> makes a sin expression with given argument and coefficient</p>
+<dt><span class="spadfun">makeSin</span>: (E, R) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">makeSin(e,</span> <span class="pre">r)</span></code> makes a sin expression with given argument and coefficient</p>
 </dd>
 </dl>
 <dl class="simple" id="l466f7572696572536572696573-6f6e653f">
@@ -235,6 +235,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -275,7 +276,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

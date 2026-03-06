@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="fortrantemplate">
 <span id="l466f727472616e54656d706c617465"></span><span id="index-0"></span><h1>FortranTemplate<a class="headerlink" href="#fortrantemplate" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/fortran.spad#L1331">fortran.spad line 1331</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/fortran.spad#L1331">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/fortran.spad#L1329">fortran.spad line 1329</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/fortran.spad#L1329">[edit on github]</a></p>
 <p>Code to manipulate Fortran templates</p>
 <dl class="simple" id="l466f727472616e54656d706c617465-3d">
 <dt><a class="reference internal" href="BasicType.html#l426173696354797065-3d"><span class="std std-ref">=</span></a>: (%, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>from <a class="reference internal" href="BasicType.html#l426173696354797065"><span class="std std-ref">BasicType</span></a></p>
@@ -68,15 +68,15 @@
 </dd>
 </dl>
 <span id="l466f727472616e54656d706c617465-666f727472616e436172726961676552657475726e"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">fortranCarriageReturn</span>: () -&gt; <a class="reference internal" href="Void.html#l566f6964"><span class="std std-ref">Void</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">fortranCarriageReturn()</span></code> produces a carriage return on the current Fortran output stream</p>
+<dt><span class="spadfun">fortranCarriageReturn</span>: () -&gt; <a class="reference internal" href="Void.html#l566f6964"><span class="std std-ref">Void</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">fortranCarriageReturn()</span></code> produces a carriage return on the current Fortran output stream</p>
 </dd>
 </dl>
 <span id="l466f727472616e54656d706c617465-666f727472616e4c69746572616c"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">fortranLiteral</span>: <a class="reference internal" href="String.html#l537472696e67"><span class="std std-ref">String</span></a> -&gt; <a class="reference internal" href="Void.html#l566f6964"><span class="std std-ref">Void</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">fortranLiteral(s)</span></code> writes <code class="docutils literal notranslate"><span class="pre">s</span></code> to the current Fortran output stream</p>
+<dt><span class="spadfun">fortranLiteral</span>: <a class="reference internal" href="String.html#l537472696e67"><span class="std std-ref">String</span></a> -&gt; <a class="reference internal" href="Void.html#l566f6964"><span class="std std-ref">Void</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">fortranLiteral(s)</span></code> writes <code class="code docutils literal notranslate"><span class="pre">s</span></code> to the current Fortran output stream</p>
 </dd>
 </dl>
 <span id="l466f727472616e54656d706c617465-666f727472616e4c69746572616c4c696e65"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">fortranLiteralLine</span>: <a class="reference internal" href="String.html#l537472696e67"><span class="std std-ref">String</span></a> -&gt; <a class="reference internal" href="Void.html#l566f6964"><span class="std std-ref">Void</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">fortranLiteralLine(s)</span></code> writes <code class="docutils literal notranslate"><span class="pre">s</span></code> to the current Fortran output stream, followed by a carriage return</p>
+<dt><span class="spadfun">fortranLiteralLine</span>: <a class="reference internal" href="String.html#l537472696e67"><span class="std std-ref">String</span></a> -&gt; <a class="reference internal" href="Void.html#l566f6964"><span class="std std-ref">Void</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">fortranLiteralLine(s)</span></code> writes <code class="code docutils literal notranslate"><span class="pre">s</span></code> to the current Fortran output stream, followed by a carriage return</p>
 </dd>
 </dl>
 <dl class="simple" id="l466f727472616e54656d706c617465-696f6d6f6465">
@@ -98,11 +98,11 @@
 </dd>
 </dl>
 <span id="l466f727472616e54656d706c617465-70726f6365737354656d706c617465"></span><dl class="simple" id="index-4">
-<dt><span class="spadfun">processTemplate</span>: (<a class="reference internal" href="FileName.html#l46696c654e616d65"><span class="std std-ref">FileName</span></a>, <a class="reference internal" href="FileName.html#l46696c654e616d65"><span class="std std-ref">FileName</span></a>) -&gt; <a class="reference internal" href="FileName.html#l46696c654e616d65"><span class="std std-ref">FileName</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">processTemplate(tp,</span> <span class="pre">fn)</span></code> processes the template <code class="docutils literal notranslate"><span class="pre">tp</span></code>, writing the result out to <code class="docutils literal notranslate"><span class="pre">fn</span></code>.</p>
+<dt><span class="spadfun">processTemplate</span>: (<a class="reference internal" href="FileName.html#l46696c654e616d65"><span class="std std-ref">FileName</span></a>, <a class="reference internal" href="FileName.html#l46696c654e616d65"><span class="std std-ref">FileName</span></a>) -&gt; <a class="reference internal" href="FileName.html#l46696c654e616d65"><span class="std std-ref">FileName</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">processTemplate(tp,</span> <span class="pre">fn)</span></code> processes the template <code class="code docutils literal notranslate"><span class="pre">tp</span></code>, writing the result out to <code class="code docutils literal notranslate"><span class="pre">fn</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="index-5">
-<dt><span class="spadfun">processTemplate</span>: <a class="reference internal" href="FileName.html#l46696c654e616d65"><span class="std std-ref">FileName</span></a> -&gt; <a class="reference internal" href="FileName.html#l46696c654e616d65"><span class="std std-ref">FileName</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">processTemplate(tp)</span></code> processes the template <code class="docutils literal notranslate"><span class="pre">tp</span></code>, writing the result to the current FORTRAN output stream.</p>
+<dt><span class="spadfun">processTemplate</span>: <a class="reference internal" href="FileName.html#l46696c654e616d65"><span class="std std-ref">FileName</span></a> -&gt; <a class="reference internal" href="FileName.html#l46696c654e616d65"><span class="std std-ref">FileName</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">processTemplate(tp)</span></code> processes the template <code class="code docutils literal notranslate"><span class="pre">tp</span></code>, writing the result to the current FORTRAN output stream.</p>
 </dd>
 </dl>
 <dl class="simple" id="l466f727472616e54656d706c617465-7265616421">
@@ -135,6 +135,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -175,7 +176,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

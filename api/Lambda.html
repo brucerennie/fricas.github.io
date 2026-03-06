@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,17 +45,17 @@
             
   <section id="lambda-ut">
 <span id="l4c616d626461"></span><span id="index-0"></span><h1>Lambda UT<a class="headerlink" href="#lambda-ut" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/computation.spad#L856">computation.spad line 856</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/computation.spad#L856">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/computation.spad#L856">computation.spad line 856</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/computation.spad#L856">[edit on github]</a></p>
 <ul class="simple">
 <li><p>UT: <a class="reference internal" href="VarCat.html#l566172436174"><span class="std std-ref">VarCat</span></a></p></li>
 </ul>
 <p>An implementation of untyped lambda-calculus</p>
 <span id="l4c616d626461-3d"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">=</span>: (%, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>return <code class="docutils literal notranslate"><span class="pre">true</span></code> if equal (deep search) that is: all terms at all levels in tree must be alpha-equivalent to return <code class="docutils literal notranslate"><span class="pre">true</span></code> That is the names, but not the deBruijn index, of the bound variables can be different. beta-equivalence is not implemented because it is not decidable.</p>
+<dt><span class="spadfun">=</span>: (%, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>return <code class="code docutils literal notranslate"><span class="pre">true</span></code> if equal (deep search) that is: all terms at all levels in tree must be alpha-equivalent to return <code class="code docutils literal notranslate"><span class="pre">true</span></code> That is the names, but not the deBruijn index, of the bound variables can be different. beta-equivalence is not implemented because it is not decidable.</p>
 </dd>
 </dl>
 <span id="l4c616d626461-61746f6d3f"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">atom?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this is an atom, that is free or bound variable otherwise return <code class="docutils literal notranslate"><span class="pre">false</span></code> if this is a compound or lambda definition</p>
+<dt><span class="spadfun">atom?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>returns <code class="code docutils literal notranslate"><span class="pre">true</span></code> if this is an atom, that is free or bound variable otherwise return <code class="code docutils literal notranslate"><span class="pre">false</span></code> if this is a compound or lambda definition</p>
 </dd>
 </dl>
 <span id="l4c616d626461-62696e64"></span><dl class="simple" id="index-3">
@@ -83,19 +83,19 @@
 </dd>
 </dl>
 <span id="l4c616d626461-6973426f756e644e6f64653f"></span><dl class="simple" id="index-8">
-<dt><span class="spadfun">isBoundNode?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>introspection: returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this is a bound leaf node</p>
+<dt><span class="spadfun">isBoundNode?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>introspection: returns <code class="code docutils literal notranslate"><span class="pre">true</span></code> if this is a bound leaf node</p>
 </dd>
 </dl>
 <span id="l4c616d626461-6973436f6d706f756e643f"></span><dl class="simple" id="index-9">
-<dt><span class="spadfun">isCompound?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>introspection: returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this is a compound term containing two nodes</p>
+<dt><span class="spadfun">isCompound?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>introspection: returns <code class="code docutils literal notranslate"><span class="pre">true</span></code> if this is a compound term containing two nodes</p>
 </dd>
 </dl>
 <span id="l4c616d626461-6973467265654e6f64653f"></span><dl class="simple" id="index-10">
-<dt><span class="spadfun">isFreeNode?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>introspection: returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this is a unbound leaf node</p>
+<dt><span class="spadfun">isFreeNode?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>introspection: returns <code class="code docutils literal notranslate"><span class="pre">true</span></code> if this is a unbound leaf node</p>
 </dd>
 </dl>
 <span id="l4c616d626461-69734c616d6264613f"></span><dl class="simple" id="index-11">
-<dt><span class="spadfun">isLambda?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>introspection: returns <code class="docutils literal notranslate"><span class="pre">true</span></code> if this is a lambda definition</p>
+<dt><span class="spadfun">isLambda?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>introspection: returns <code class="code docutils literal notranslate"><span class="pre">true</span></code> if this is a lambda definition</p>
 </dd>
 </dl>
 <span id="l4c616d626461-6c616d626461"></span><dl class="simple" id="index-12">
@@ -115,7 +115,7 @@
 </dd>
 </dl>
 <span id="l4c616d626461-70617273654c616d626461"></span><dl class="simple" id="index-16">
-<dt><span class="spadfun">parseLambda</span>: <a class="reference internal" href="String.html#l537472696e67"><span class="std std-ref">String</span></a> -&gt; %</dt><dd><p>Constructs nested lambda terms from a string notation assumes format like this: &lt;term&gt; : <code class="docutils literal notranslate"><span class="pre">:=</span></code> “<code class="docutils literal notranslate"><span class="pre">\&quot;</span></code> var “.”&lt;term&gt; | <code class="docutils literal notranslate"><span class="pre">n</span></code> | &lt;term&gt;&lt;term&gt; | “(“&lt;term&gt;”)” where: \ = lambda (<code class="docutils literal notranslate"><span class="pre">I</span></code> would like to use unicode lambda symbol but <code class="docutils literal notranslate"><span class="pre">I</span></code> would also like to keep maximum compatibility with non-unicode versions of Lisp) <code class="docutils literal notranslate"><span class="pre">n</span></code> = De Bruijn index which is a integer where, 1=inside inner lambda term, 2= next outer lambda term, 3= next outer and so on. brackets can be used around whole terms.</p>
+<dt><span class="spadfun">parseLambda</span>: <a class="reference internal" href="String.html#l537472696e67"><span class="std std-ref">String</span></a> -&gt; %</dt><dd><p>Constructs nested lambda terms from a string notation assumes format like this: &lt;term&gt; : <code class="code docutils literal notranslate"><span class="pre">:=</span></code> “<code class="code docutils literal notranslate"><span class="pre">&quot;</span></code> var “.”&lt;term&gt; | <code class="code docutils literal notranslate"><span class="pre">n</span></code> | &lt;term&gt;&lt;term&gt; | “(“&lt;term&gt;”)” where: \ = lambda (<code class="code docutils literal notranslate"><span class="pre">I</span></code> would like to use unicode lambda symbol but <code class="code docutils literal notranslate"><span class="pre">I</span></code> would also like to keep maximum compatibility with non-unicode versions of Lisp) <code class="code docutils literal notranslate"><span class="pre">n</span></code> = De Bruijn index which is a integer where, 1=inside inner lambda term, 2= next outer lambda term, 3= next outer and so on. brackets can be used around whole terms.</p>
 </dd>
 </dl>
 <span id="l4c616d626461-70617273655465726d"></span><dl class="simple" id="index-17">
@@ -123,11 +123,11 @@
 </dd>
 </dl>
 <span id="l4c616d626461-7265647578"></span><dl class="simple" id="index-18">
-<dt><span class="spadfun">redux</span>: % -&gt; %</dt><dd><p>beta reduction - apply beta reduction recusivly to all subnodes</p>
+<dt><span class="spadfun">redux</span>: % -&gt; %</dt><dd><p>beta reduction - apply beta reduction recursively to all subnodes</p>
 </dd>
 </dl>
 <span id="l4c616d626461-7375627374"></span><dl class="simple" id="index-19">
-<dt><span class="spadfun">subst</span>: (%, %, %) -&gt; %</dt><dd><p>substitution of ‘a’ for <code class="docutils literal notranslate"><span class="pre">'b'</span></code> in <code class="docutils literal notranslate"><span class="pre">'n'</span></code></p>
+<dt><span class="spadfun">subst</span>: (%, %, %) -&gt; %</dt><dd><p>substitution of ‘a’ for <code class="code docutils literal notranslate"><span class="pre">'b'</span></code> in <code class="code docutils literal notranslate"><span class="pre">'n'</span></code></p>
 </dd>
 </dl>
 <span id="l4c616d626461-746f537472696e67"></span><dl class="simple" id="index-20">
@@ -157,6 +157,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -197,7 +198,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

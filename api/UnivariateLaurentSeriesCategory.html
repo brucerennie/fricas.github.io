@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="univariatelaurentseriescategory-coef">
 <span id="l556e69766172696174654c617572656e7453657269657343617465676f7279"></span><span id="index-0"></span><h1>UnivariateLaurentSeriesCategory Coef<a class="headerlink" href="#univariatelaurentseriescategory-coef" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/pscat.spad#L371">pscat.spad line 371</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/pscat.spad#L371">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/pscat.spad#L373">pscat.spad line 373</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/pscat.spad#L373">[edit on github]</a></p>
 <ul class="simple">
 <li><p>Coef: <a class="reference internal" href="Ring.html#l52696e67"><span class="std std-ref">Ring</span></a></p></li>
 </ul>
@@ -186,10 +186,6 @@
 </dl>
 <dl class="simple" id="l556e69766172696174654c617572656e7453657269657343617465676f7279-6368617261637465726973746963">
 <dt><a class="reference internal" href="NonAssociativeRing.html#l4e6f6e4173736f6369617469766552696e67-6368617261637465726973746963"><span class="std std-ref">characteristic</span></a>: () -&gt; <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a></dt><dd><p>from <a class="reference internal" href="NonAssociativeRing.html#l4e6f6e4173736f6369617469766552696e67"><span class="std std-ref">NonAssociativeRing</span></a></p>
-</dd>
-</dl>
-<dl class="simple" id="l556e69766172696174654c617572656e7453657269657343617465676f7279-636861727468526f6f74">
-<dt><a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f-636861727468526f6f74"><span class="std std-ref">charthRoot</span></a>: % -&gt; Union(%, failed) if Coef has <a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f"><span class="std std-ref">CharacteristicNonZero</span></a></dt><dd><p>from <a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f"><span class="std std-ref">CharacteristicNonZero</span></a></p>
 </dd>
 </dl>
 <dl class="simple" id="l556e69766172696174654c617572656e7453657269657343617465676f7279-636f656666696369656e74">
@@ -349,7 +345,7 @@
 </dd>
 </dl>
 <span id="l556e69766172696174654c617572656e7453657269657343617465676f7279-6c617572656e74"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">laurent</span>: (<a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a>, <a class="reference internal" href="Stream.html#l53747265616d"><span class="std std-ref">Stream</span></a> Coef) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">laurent(n,</span> <span class="pre">st)</span></code> returns <code class="docutils literal notranslate"><span class="pre">xn</span> <span class="pre">*</span> <span class="pre">series</span> <span class="pre">st</span></code> where <code class="docutils literal notranslate"><span class="pre">xn</span> <span class="pre">=</span> <span class="pre">monomial(1,</span> <span class="pre">n)</span></code> and <code class="docutils literal notranslate"><span class="pre">series</span> <span class="pre">st</span></code> stands for the power series with coefficients given by the stream st.</p>
+<dt><span class="spadfun">laurent</span>: (<a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a>, <a class="reference internal" href="Stream.html#l53747265616d"><span class="std std-ref">Stream</span></a> Coef) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">laurent(n,</span> <span class="pre">st)</span></code> returns <code class="code docutils literal notranslate"><span class="pre">xn</span> <span class="pre">*</span> <span class="pre">series</span> <span class="pre">st</span></code> where <code class="code docutils literal notranslate"><span class="pre">xn</span> <span class="pre">=</span> <span class="pre">monomial(1,</span> <span class="pre">n)</span></code> and <code class="code docutils literal notranslate"><span class="pre">series</span> <span class="pre">st</span></code> stands for the power series with coefficients given by the stream st.</p>
 </dd>
 </dl>
 <dl class="simple" id="l556e69766172696174654c617572656e7453657269657343617465676f7279-6c636d">
@@ -409,7 +405,7 @@
 </dd>
 </dl>
 <span id="l556e69766172696174654c617572656e7453657269657343617465676f7279-6d756c7469706c79436f656666696369656e7473"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">multiplyCoefficients</span>: (<a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a> -&gt; Coef, %) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">multiplyCoefficients(f,</span> <span class="pre">sum(n</span> <span class="pre">=</span> <span class="pre">n0..infinity,</span> <span class="pre">a[n]</span> <span class="pre">*</span> <span class="pre">x^n))</span> <span class="pre">=</span> <span class="pre">sum(n</span> <span class="pre">=</span> <span class="pre">0..infinity,</span> <span class="pre">f(n)</span> <span class="pre">*</span> <span class="pre">a[n]</span> <span class="pre">*</span> <span class="pre">x^n)</span></code>. This function is used when Puiseux series are represented by a Laurent series and an exponent.</p>
+<dt><span class="spadfun">multiplyCoefficients</span>: (<a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a> -&gt; Coef, %) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">multiplyCoefficients(f,</span> <span class="pre">sum(n</span> <span class="pre">=</span> <span class="pre">n0..infinity,</span> <span class="pre">a[n]</span> <span class="pre">*</span> <span class="pre">x^n))</span> <span class="pre">=</span> <span class="pre">sum(n</span> <span class="pre">=</span> <span class="pre">0..infinity,</span> <span class="pre">f(n)</span> <span class="pre">*</span> <span class="pre">a[n]</span> <span class="pre">*</span> <span class="pre">x^n)</span></code>. This function is used when Puiseux series are represented by a Laurent series and an exponent.</p>
 </dd>
 </dl>
 <dl class="simple" id="l556e69766172696174654c617572656e7453657269657343617465676f7279-6d756c7469706c794578706f6e656e7473">
@@ -459,11 +455,11 @@
 </dd>
 </dl>
 <span id="l556e69766172696174654c617572656e7453657269657343617465676f7279-726174696f6e616c46756e6374696f6e"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">rationalFunction</span>: (%, <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a>) -&gt; <a class="reference internal" href="Fraction.html#l4672616374696f6e"><span class="std std-ref">Fraction</span></a> <a class="reference internal" href="Polynomial.html#l506f6c796e6f6d69616c"><span class="std std-ref">Polynomial</span></a> Coef if Coef has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">rationalFunction(f,</span> <span class="pre">k)</span></code> returns a rational function consisting of the sum of all terms of <code class="docutils literal notranslate"><span class="pre">f</span></code> of degree <code class="docutils literal notranslate"><span class="pre">&lt;=</span></code> <code class="docutils literal notranslate"><span class="pre">k</span></code>.</p>
+<dt><span class="spadfun">rationalFunction</span>: (%, <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a>) -&gt; <a class="reference internal" href="Fraction.html#l4672616374696f6e"><span class="std std-ref">Fraction</span></a> <a class="reference internal" href="Polynomial.html#l506f6c796e6f6d69616c"><span class="std std-ref">Polynomial</span></a> Coef if Coef has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">rationalFunction(f,</span> <span class="pre">k)</span></code> returns a rational function consisting of the sum of all terms of <code class="code docutils literal notranslate"><span class="pre">f</span></code> of degree <code class="code docutils literal notranslate"><span class="pre">&lt;=</span></code> <code class="code docutils literal notranslate"><span class="pre">k</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="index-4">
-<dt><span class="spadfun">rationalFunction</span>: (%, <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a>, <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a>) -&gt; <a class="reference internal" href="Fraction.html#l4672616374696f6e"><span class="std std-ref">Fraction</span></a> <a class="reference internal" href="Polynomial.html#l506f6c796e6f6d69616c"><span class="std std-ref">Polynomial</span></a> Coef if Coef has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">rationalFunction(f,</span> <span class="pre">k1,</span> <span class="pre">k2)</span></code> returns a rational function consisting of the sum of all terms of <code class="docutils literal notranslate"><span class="pre">f</span></code> of degree <code class="docutils literal notranslate"><span class="pre">d</span></code> with <code class="docutils literal notranslate"><span class="pre">k1</span> <span class="pre">&lt;=</span> <span class="pre">d</span> <span class="pre">&lt;=</span> <span class="pre">k2</span></code>.</p>
+<dt><span class="spadfun">rationalFunction</span>: (%, <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a>, <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a>) -&gt; <a class="reference internal" href="Fraction.html#l4672616374696f6e"><span class="std std-ref">Fraction</span></a> <a class="reference internal" href="Polynomial.html#l506f6c796e6f6d69616c"><span class="std std-ref">Polynomial</span></a> Coef if Coef has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">rationalFunction(f,</span> <span class="pre">k1,</span> <span class="pre">k2)</span></code> returns a rational function consisting of the sum of all terms of <code class="code docutils literal notranslate"><span class="pre">f</span></code> of degree <code class="code docutils literal notranslate"><span class="pre">d</span></code> with <code class="code docutils literal notranslate"><span class="pre">k1</span> <span class="pre">&lt;=</span> <span class="pre">d</span> <span class="pre">&lt;=</span> <span class="pre">k2</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="l556e69766172696174654c617572656e7453657269657343617465676f7279-7265636970">
@@ -501,7 +497,7 @@
 </dd>
 </dl>
 <span id="l556e69766172696174654c617572656e7453657269657343617465676f7279-736572696573"></span><dl class="simple" id="index-5">
-<dt><span class="spadfun">series</span>: <a class="reference internal" href="Stream.html#l53747265616d"><span class="std std-ref">Stream</span></a> Record(k: <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a>, c: Coef) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">series(st)</span></code> creates a series from a stream of non-zero terms, where a term is an exponent-coefficient pair. The terms in the stream should be ordered by increasing order of exponents.</p>
+<dt><span class="spadfun">series</span>: <a class="reference internal" href="Stream.html#l53747265616d"><span class="std std-ref">Stream</span></a> Record(k: <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a>, c: Coef) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">series(st)</span></code> creates a series from a stream of non-zero terms, where a term is an exponent-coefficient pair. The terms in the stream should be ordered by increasing order of exponents.</p>
 </dd>
 </dl>
 <dl class="simple" id="l556e69766172696174654c617572656e7453657269657343617465676f7279-73696e">
@@ -656,6 +652,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -696,7 +693,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

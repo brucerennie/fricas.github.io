@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="directproductcategory-dim-r">
 <span id="l44697265637450726f6475637443617465676f7279"></span><span id="index-0"></span><h1>DirectProductCategory(dim, R)<a class="headerlink" href="#directproductcategory-dim-r" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/vector.spad#L244">vector.spad line 244</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/vector.spad#L244">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/vector.spad#L244">vector.spad line 244</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/vector.spad#L244">[edit on github]</a></p>
 <ul class="simple">
 <li><p>dim: <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a></p></li>
 <li><p>R: <a class="reference internal" href="Type.html#l54797065"><span class="std std-ref">Type</span></a></p></li>
@@ -70,7 +70,7 @@
 </dd>
 </dl>
 <dl class="simple" id="index-1">
-<dt><span class="spadfun">*</span>: (%, R) -&gt; % if R has <a class="reference internal" href="SemiGroup.html#l53656d6947726f7570"><span class="std std-ref">SemiGroup</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">y</span> <span class="pre">*</span> <span class="pre">r</span></code> multiplies each component of the vector <code class="docutils literal notranslate"><span class="pre">y</span></code> by the element <code class="docutils literal notranslate"><span class="pre">r</span></code>.</p>
+<dt><span class="spadfun">*</span>: (%, R) -&gt; % if R has <a class="reference internal" href="SemiGroup.html#l53656d6947726f7570"><span class="std std-ref">SemiGroup</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">y</span> <span class="pre">*</span> <span class="pre">r</span></code> multiplies each component of the vector <code class="code docutils literal notranslate"><span class="pre">y</span></code> by the element <code class="code docutils literal notranslate"><span class="pre">r</span></code>.</p>
 </dd>
 <dt><a class="reference internal" href="AbelianGroup.html#l4162656c69616e47726f7570-2a"><span class="std std-ref">*</span></a>: (<a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a>, %) -&gt; % if R has <a class="reference internal" href="AbelianGroup.html#l4162656c69616e47726f7570"><span class="std std-ref">AbelianGroup</span></a> or R has <a class="reference internal" href="SemiRng.html#l53656d69526e67"><span class="std std-ref">SemiRng</span></a> and % has <a class="reference internal" href="AbelianGroup.html#l4162656c69616e47726f7570"><span class="std std-ref">AbelianGroup</span></a></dt><dd><p>from <a class="reference internal" href="AbelianGroup.html#l4162656c69616e47726f7570"><span class="std std-ref">AbelianGroup</span></a></p>
 </dd>
@@ -80,7 +80,7 @@
 </dd>
 </dl>
 <dl class="simple" id="index-2">
-<dt><span class="spadfun">*</span>: (R, %) -&gt; % if R has <a class="reference internal" href="SemiGroup.html#l53656d6947726f7570"><span class="std std-ref">SemiGroup</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">r</span> <span class="pre">*</span> <span class="pre">y</span></code> multiplies the element <code class="docutils literal notranslate"><span class="pre">r</span></code> times each component of the vector <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<dt><span class="spadfun">*</span>: (R, %) -&gt; % if R has <a class="reference internal" href="SemiGroup.html#l53656d6947726f7570"><span class="std std-ref">SemiGroup</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">r</span> <span class="pre">*</span> <span class="pre">y</span></code> multiplies the element <code class="code docutils literal notranslate"><span class="pre">r</span></code> times each component of the vector <code class="code docutils literal notranslate"><span class="pre">y</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="l44697265637450726f6475637443617465676f7279-2b">
@@ -212,11 +212,11 @@
 </dd>
 </dl>
 <span id="l44697265637450726f6475637443617465676f7279-64697265637450726f64756374"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">directProduct</span>: <a class="reference internal" href="Vector.html#l566563746f72"><span class="std std-ref">Vector</span></a> R -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">directProduct(v)</span></code> converts the vector <code class="docutils literal notranslate"><span class="pre">v</span></code> to a direct product. Error: if the length of <code class="docutils literal notranslate"><span class="pre">v</span></code> is different from dim.</p>
+<dt><span class="spadfun">directProduct</span>: <a class="reference internal" href="Vector.html#l566563746f72"><span class="std std-ref">Vector</span></a> R -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">directProduct(v)</span></code> converts the vector <code class="code docutils literal notranslate"><span class="pre">v</span></code> to a direct product. Error: if the length of <code class="code docutils literal notranslate"><span class="pre">v</span></code> is different from dim.</p>
 </dd>
 </dl>
 <span id="l44697265637450726f6475637443617465676f7279-646f74"></span><dl class="simple" id="index-4">
-<dt><span class="spadfun">dot</span>: (%, %) -&gt; R if R has <a class="reference internal" href="AbelianMonoid.html#l4162656c69616e4d6f6e6f6964"><span class="std std-ref">AbelianMonoid</span></a> and R has <a class="reference internal" href="SemiRng.html#l53656d69526e67"><span class="std std-ref">SemiRng</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">dot(x,</span> <span class="pre">y)</span></code> computes the inner product of the vectors <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code>.</p>
+<dt><span class="spadfun">dot</span>: (%, %) -&gt; R if R has <a class="reference internal" href="AbelianMonoid.html#l4162656c69616e4d6f6e6f6964"><span class="std std-ref">AbelianMonoid</span></a> and R has <a class="reference internal" href="SemiRng.html#l53656d69526e67"><span class="std std-ref">SemiRng</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">dot(x,</span> <span class="pre">y)</span></code> computes the inner product of the vectors <code class="code docutils literal notranslate"><span class="pre">x</span></code> and <code class="code docutils literal notranslate"><span class="pre">y</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="l44697265637450726f6475637443617465676f7279-656c74">
@@ -460,7 +460,7 @@
 </dd>
 </dl>
 <span id="l44697265637450726f6475637443617465676f7279-756e6974566563746f72"></span><dl class="simple" id="index-5">
-<dt><span class="spadfun">unitVector</span>: <a class="reference internal" href="PositiveInteger.html#l506f736974697665496e7465676572"><span class="std std-ref">PositiveInteger</span></a> -&gt; % if R has <a class="reference internal" href="AbelianMonoid.html#l4162656c69616e4d6f6e6f6964"><span class="std std-ref">AbelianMonoid</span></a> and R has <a class="reference internal" href="Monoid.html#l4d6f6e6f6964"><span class="std std-ref">Monoid</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">unitVector(n)</span></code> produces a vector with 1 in position <code class="docutils literal notranslate"><span class="pre">n</span></code> and zero elsewhere.</p>
+<dt><span class="spadfun">unitVector</span>: <a class="reference internal" href="PositiveInteger.html#l506f736974697665496e7465676572"><span class="std std-ref">PositiveInteger</span></a> -&gt; % if R has <a class="reference internal" href="AbelianMonoid.html#l4162656c69616e4d6f6e6f6964"><span class="std std-ref">AbelianMonoid</span></a> and R has <a class="reference internal" href="Monoid.html#l4d6f6e6f6964"><span class="std std-ref">Monoid</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">unitVector(n)</span></code> produces a vector with 1 in position <code class="code docutils literal notranslate"><span class="pre">n</span></code> and zero elsewhere.</p>
 </dd>
 </dl>
 <dl class="simple" id="l44697265637450726f6475637443617465676f7279-7a65726f3f">
@@ -550,6 +550,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -590,7 +591,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

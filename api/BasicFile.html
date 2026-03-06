@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,26 +45,26 @@
             
   <section id="basicfile">
 <span id="l426173696346696c65"></span><span id="index-0"></span><h1>BasicFile<a class="headerlink" href="#basicfile" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/fops.spad#L255">fops.spad line 255</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/fops.spad#L255">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/fops.spad#L255">fops.spad line 255</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/fops.spad#L255">[edit on github]</a></p>
 <p>This is domain for storing and reading Spad values in files.</p>
 <span id="l426173696346696c65-636c6f736521"></span><dl class="simple" id="index-1">
 <dt><span class="spadfun">close!</span>: % -&gt; <a class="reference internal" href="Void.html#l566f6964"><span class="std std-ref">Void</span></a></dt><dd><p>clos! closes the file.</p>
 </dd>
 </dl>
 <span id="l426173696346696c65-666c757368"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">flush</span>: % -&gt; <a class="reference internal" href="Void.html#l566f6964"><span class="std std-ref">Void</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">flush</span> <span class="pre">passes</span></code> all buffered data to the operating system.</p>
+<dt><span class="spadfun">flush</span>: % -&gt; <a class="reference internal" href="Void.html#l566f6964"><span class="std std-ref">Void</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">flush</span> <span class="pre">passes</span></code> all buffered data to the operating system.</p>
 </dd>
 </dl>
 <span id="l426173696346696c65-6f70656e"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">open</span>: (<a class="reference internal" href="FileName.html#l46696c654e616d65"><span class="std std-ref">FileName</span></a>, <a class="reference internal" href="String.html#l537472696e67"><span class="std std-ref">String</span></a>) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">open</span> <span class="pre">opens</span></code> the file.</p>
+<dt><span class="spadfun">open</span>: (<a class="reference internal" href="FileName.html#l46696c654e616d65"><span class="std std-ref">FileName</span></a>, <a class="reference internal" href="String.html#l537472696e67"><span class="std std-ref">String</span></a>) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">open</span> <span class="pre">opens</span></code> the file.</p>
 </dd>
 </dl>
 <span id="l426173696346696c65-72656164"></span><dl class="simple" id="index-4">
-<dt><span class="spadfun">read</span>: % -&gt; <a class="reference internal" href="None.html#l4e6f6e65"><span class="std std-ref">None</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">read</span> <span class="pre">sequentially</span></code> reads one item from the file.</p>
+<dt><span class="spadfun">read</span>: % -&gt; <a class="reference internal" href="None.html#l4e6f6e65"><span class="std std-ref">None</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">read</span> <span class="pre">sequentially</span></code> reads one item from the file.</p>
 </dd>
 </dl>
 <span id="l426173696346696c65-72656164496643616e"></span><dl class="simple" id="index-5">
-<dt><span class="spadfun">readIfCan</span>: % -&gt; Union(<a class="reference internal" href="None.html#l4e6f6e65"><span class="std std-ref">None</span></a>, failed)</dt><dd><p><code class="docutils literal notranslate"><span class="pre">readIfCan</span> <span class="pre">read</span></code> one item from the file. otherwise returns <code class="docutils literal notranslate"><span class="pre">&quot;failed&quot;</span></code></p>
+<dt><span class="spadfun">readIfCan</span>: % -&gt; Union(<a class="reference internal" href="None.html#l4e6f6e65"><span class="std std-ref">None</span></a>, failed)</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">readIfCan</span> <span class="pre">reads</span></code> one item from the file, otherwise returns <code class="code docutils literal notranslate"><span class="pre">&quot;failed&quot;</span></code></p>
 </dd>
 </dl>
 <span id="l426173696346696c65-777269746521"></span><dl class="simple" id="index-6">
@@ -85,6 +85,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -125,7 +126,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

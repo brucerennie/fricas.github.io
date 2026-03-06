@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="openmatherror">
 <span id="l4f70656e4d6174684572726f72"></span><span id="index-0"></span><h1>OpenMathError<a class="headerlink" href="#openmatherror" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/omerror.spad#L46">omerror.spad line 46</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/omerror.spad#L46">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/omerror.spad#L46">omerror.spad line 46</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/omerror.spad#L46">[edit on github]</a></p>
 <p><a class="reference internal" href="#l4f70656e4d6174684572726f72"><span class="std std-ref">OpenMathError</span></a> is the domain of OpenMath errors.</p>
 <dl class="simple" id="l4f70656e4d6174684572726f72-3d">
 <dt><a class="reference internal" href="BasicType.html#l426173696354797065-3d"><span class="std std-ref">=</span></a>: (%, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>from <a class="reference internal" href="BasicType.html#l426173696354797065"><span class="std std-ref">BasicType</span></a></p>
@@ -60,11 +60,11 @@
 </dd>
 </dl>
 <span id="l4f70656e4d6174684572726f72-6572726f72496e666f"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">errorInfo</span>: % -&gt; <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">errorInfo(u)</span></code> returns information about the error <code class="docutils literal notranslate"><span class="pre">u</span></code>.</p>
+<dt><span class="spadfun">errorInfo</span>: % -&gt; <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">errorInfo(u)</span></code> returns information about the error <code class="code docutils literal notranslate"><span class="pre">u</span></code>.</p>
 </dd>
 </dl>
 <span id="l4f70656e4d6174684572726f72-6572726f724b696e64"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">errorKind</span>: % -&gt; <a class="reference internal" href="OpenMathErrorKind.html#l4f70656e4d6174684572726f724b696e64"><span class="std std-ref">OpenMathErrorKind</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">errorKind(u)</span></code> returns the type of error which <code class="docutils literal notranslate"><span class="pre">u</span></code> represents.</p>
+<dt><span class="spadfun">errorKind</span>: % -&gt; <a class="reference internal" href="OpenMathErrorKind.html#l4f70656e4d6174684572726f724b696e64"><span class="std std-ref">OpenMathErrorKind</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">errorKind(u)</span></code> returns the type of error which <code class="code docutils literal notranslate"><span class="pre">u</span></code> represents.</p>
 </dd>
 </dl>
 <dl class="simple" id="l4f70656e4d6174684572726f72-6c61746578">
@@ -72,7 +72,7 @@
 </dd>
 </dl>
 <span id="l4f70656e4d6174684572726f72-6f6d4572726f72"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">omError</span>: (<a class="reference internal" href="OpenMathErrorKind.html#l4f70656e4d6174684572726f724b696e64"><span class="std std-ref">OpenMathErrorKind</span></a>, <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a>) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">omError(k,</span> <span class="pre">l)</span></code> creates an instance of OpenMathError.</p>
+<dt><span class="spadfun">omError</span>: (<a class="reference internal" href="OpenMathErrorKind.html#l4f70656e4d6174684572726f724b696e64"><span class="std std-ref">OpenMathErrorKind</span></a>, <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a>) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">omError(k,</span> <span class="pre">l)</span></code> creates an instance of OpenMathError.</p>
 </dd>
 </dl>
 <p><a class="reference internal" href="BasicType.html#l426173696354797065"><span class="std std-ref">BasicType</span></a></p>
@@ -92,6 +92,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -132,7 +133,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

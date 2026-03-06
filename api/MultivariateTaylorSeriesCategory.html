@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="multivariatetaylorseriescategory-coef-var">
 <span id="l4d756c7469766172696174655461796c6f7253657269657343617465676f7279"></span><span id="index-0"></span><h1>MultivariateTaylorSeriesCategory(Coef, Var)<a class="headerlink" href="#multivariatetaylorseriescategory-coef-var" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/pscat.spad#L459">pscat.spad line 459</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/pscat.spad#L459">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/pscat.spad#L461">pscat.spad line 461</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/pscat.spad#L461">[edit on github]</a></p>
 <ul class="simple">
 <li><p>Coef: <a class="reference internal" href="Ring.html#l52696e67"><span class="std std-ref">Ring</span></a></p></li>
 <li><p>Var: <a class="reference internal" href="OrderedSet.html#l4f726465726564536574"><span class="std std-ref">OrderedSet</span></a></p></li>
@@ -177,20 +177,16 @@
 <dt><a class="reference internal" href="NonAssociativeRing.html#l4e6f6e4173736f6369617469766552696e67-6368617261637465726973746963"><span class="std std-ref">characteristic</span></a>: () -&gt; <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a></dt><dd><p>from <a class="reference internal" href="NonAssociativeRing.html#l4e6f6e4173736f6369617469766552696e67"><span class="std std-ref">NonAssociativeRing</span></a></p>
 </dd>
 </dl>
-<dl class="simple" id="l4d756c7469766172696174655461796c6f7253657269657343617465676f7279-636861727468526f6f74">
-<dt><a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f-636861727468526f6f74"><span class="std std-ref">charthRoot</span></a>: % -&gt; Union(%, failed) if Coef has <a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f"><span class="std std-ref">CharacteristicNonZero</span></a></dt><dd><p>from <a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f"><span class="std std-ref">CharacteristicNonZero</span></a></p>
-</dd>
-</dl>
 <dl class="simple" id="l4d756c7469766172696174655461796c6f7253657269657343617465676f7279-636f656666696369656e74">
 <dt><a class="reference internal" href="AbelianMonoidRing.html#l4162656c69616e4d6f6e6f696452696e67-636f656666696369656e74"><span class="std std-ref">coefficient</span></a>: (%, <a class="reference internal" href="IndexedExponents.html#l496e64657865644578706f6e656e7473"><span class="std std-ref">IndexedExponents</span></a> Var) -&gt; Coef</dt><dd><p>from <a class="reference internal" href="AbelianMonoidRing.html#l4162656c69616e4d6f6e6f696452696e67"><span class="std std-ref">AbelianMonoidRing</span></a>(Coef, <a class="reference internal" href="IndexedExponents.html#l496e64657865644578706f6e656e7473"><span class="std std-ref">IndexedExponents</span></a> Var)</p>
 </dd>
 </dl>
 <dl class="simple" id="index-1">
-<dt><span class="spadfun">coefficient</span>: (%, <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> Var, <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">coefficient(f,</span> <span class="pre">[x1,</span> <span class="pre">x2,</span> <span class="pre">...,</span> <span class="pre">xk],</span> <span class="pre">[n1,</span> <span class="pre">n2,</span> <span class="pre">...,</span> <span class="pre">nk])</span></code> returns the coefficient of <code class="docutils literal notranslate"><span class="pre">x1^n1</span> <span class="pre">*</span> <span class="pre">...</span> <span class="pre">*</span> <span class="pre">xk^nk</span></code> in <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
+<dt><span class="spadfun">coefficient</span>: (%, <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> Var, <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">coefficient(f,</span> <span class="pre">[x1,</span> <span class="pre">x2,</span> <span class="pre">...,</span> <span class="pre">xk],</span> <span class="pre">[n1,</span> <span class="pre">n2,</span> <span class="pre">...,</span> <span class="pre">nk])</span></code> returns the coefficient of <code class="code docutils literal notranslate"><span class="pre">x1^n1</span> <span class="pre">*</span> <span class="pre">...</span> <span class="pre">*</span> <span class="pre">xk^nk</span></code> in <code class="code docutils literal notranslate"><span class="pre">f</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="index-2">
-<dt><span class="spadfun">coefficient</span>: (%, Var, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">coefficient(f,</span> <span class="pre">x,</span> <span class="pre">n)</span></code> returns the coefficient of <code class="docutils literal notranslate"><span class="pre">x^n</span></code> in <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
+<dt><span class="spadfun">coefficient</span>: (%, Var, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">coefficient(f,</span> <span class="pre">x,</span> <span class="pre">n)</span></code> returns the coefficient of <code class="code docutils literal notranslate"><span class="pre">x^n</span></code> in <code class="code docutils literal notranslate"><span class="pre">f</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="l4d756c7469766172696174655461796c6f7253657269657343617465676f7279-636f65726365">
@@ -292,11 +288,11 @@
 </dd>
 </dl>
 <span id="l4d756c7469766172696174655461796c6f7253657269657343617465676f7279-657874656e64"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">extend</span>: (%, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">extend(f,</span> <span class="pre">n)</span></code> causes all terms of <code class="docutils literal notranslate"><span class="pre">f</span></code> of degree <code class="docutils literal notranslate"><span class="pre">&lt;=</span> <span class="pre">n</span></code> to be computed.</p>
+<dt><span class="spadfun">extend</span>: (%, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">extend(f,</span> <span class="pre">n)</span></code> causes all terms of <code class="code docutils literal notranslate"><span class="pre">f</span></code> of degree <code class="code docutils literal notranslate"><span class="pre">&lt;=</span> <span class="pre">n</span></code> to be computed.</p>
 </dd>
 </dl>
 <span id="l4d756c7469766172696174655461796c6f7253657269657343617465676f7279-696e74656772617465"></span><dl class="simple" id="index-4">
-<dt><span class="spadfun">integrate</span>: (%, Var) -&gt; % if Coef has <a class="reference internal" href="Algebra.html#l416c6765627261"><span class="std std-ref">Algebra</span></a> <a class="reference internal" href="Fraction.html#l4672616374696f6e"><span class="std std-ref">Fraction</span></a> <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">integrate(f,</span> <span class="pre">x)</span></code> returns the anti-derivative of the power series <code class="docutils literal notranslate"><span class="pre">f(x)</span></code> with respect to the variable <code class="docutils literal notranslate"><span class="pre">x</span></code> with constant coefficient 1. We may integrate a series when we can divide coefficients by integers.</p>
+<dt><span class="spadfun">integrate</span>: (%, Var) -&gt; % if Coef has <a class="reference internal" href="Algebra.html#l416c6765627261"><span class="std std-ref">Algebra</span></a> <a class="reference internal" href="Fraction.html#l4672616374696f6e"><span class="std std-ref">Fraction</span></a> <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">integrate(f,</span> <span class="pre">x)</span></code> returns the anti-derivative of the power series <code class="code docutils literal notranslate"><span class="pre">f(x)</span></code> with respect to the variable <code class="code docutils literal notranslate"><span class="pre">x</span></code> with constant coefficient 1. We may integrate a series when we can divide coefficients by integers.</p>
 </dd>
 </dl>
 <dl class="simple" id="l4d756c7469766172696174655461796c6f7253657269657343617465676f7279-6c61746578">
@@ -342,11 +338,11 @@
 </dd>
 </dl>
 <span id="l4d756c7469766172696174655461796c6f7253657269657343617465676f7279-6d6f6e6f6d69616c"></span><dl class="simple" id="index-5">
-<dt><span class="spadfun">monomial</span>: (%, <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> Var, <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">monomial(a,</span> <span class="pre">[x1,</span> <span class="pre">x2,</span> <span class="pre">...,</span> <span class="pre">xk],</span> <span class="pre">[n1,</span> <span class="pre">n2,</span> <span class="pre">...,</span> <span class="pre">nk])</span></code> returns <code class="docutils literal notranslate"><span class="pre">a</span> <span class="pre">*</span> <span class="pre">x1^n1</span> <span class="pre">*</span> <span class="pre">...</span> <span class="pre">*</span> <span class="pre">xk^nk</span></code>.</p>
+<dt><span class="spadfun">monomial</span>: (%, <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> Var, <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">monomial(a,</span> <span class="pre">[x1,</span> <span class="pre">x2,</span> <span class="pre">...,</span> <span class="pre">xk],</span> <span class="pre">[n1,</span> <span class="pre">n2,</span> <span class="pre">...,</span> <span class="pre">nk])</span></code> returns <code class="code docutils literal notranslate"><span class="pre">a</span> <span class="pre">*</span> <span class="pre">x1^n1</span> <span class="pre">*</span> <span class="pre">...</span> <span class="pre">*</span> <span class="pre">xk^nk</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="index-6">
-<dt><span class="spadfun">monomial</span>: (%, Var, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">monomial(a,</span> <span class="pre">x,</span> <span class="pre">n)</span></code> returns <code class="docutils literal notranslate"><span class="pre">a*x^n</span></code>.</p>
+<dt><span class="spadfun">monomial</span>: (%, Var, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">monomial(a,</span> <span class="pre">x,</span> <span class="pre">n)</span></code> returns <code class="code docutils literal notranslate"><span class="pre">a*x^n</span></code>.</p>
 </dd>
 <dt><a class="reference internal" href="IndexedProductCategory.html#l496e646578656450726f6475637443617465676f7279-6d6f6e6f6d69616c"><span class="std std-ref">monomial</span></a>: (Coef, <a class="reference internal" href="IndexedExponents.html#l496e64657865644578706f6e656e7473"><span class="std std-ref">IndexedExponents</span></a> Var) -&gt; %</dt><dd><p>from <a class="reference internal" href="IndexedProductCategory.html#l496e646578656450726f6475637443617465676f7279"><span class="std std-ref">IndexedProductCategory</span></a>(Coef, <a class="reference internal" href="IndexedExponents.html#l496e64657865644578706f6e656e7473"><span class="std std-ref">IndexedExponents</span></a> Var)</p>
 </dd>
@@ -364,11 +360,11 @@
 </dd>
 </dl>
 <span id="l4d756c7469766172696174655461796c6f7253657269657343617465676f7279-6f72646572"></span><dl class="simple" id="index-7">
-<dt><span class="spadfun">order</span>: (%, Var) -&gt; <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">order(f,</span> <span class="pre">x)</span></code> returns the order of <code class="docutils literal notranslate"><span class="pre">f</span></code> viewed as a series in <code class="docutils literal notranslate"><span class="pre">x</span></code> may result in an infinite loop if <code class="docutils literal notranslate"><span class="pre">f</span></code> has no non-zero terms.</p>
+<dt><span class="spadfun">order</span>: (%, Var) -&gt; <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">order(f,</span> <span class="pre">x)</span></code> returns the order of <code class="code docutils literal notranslate"><span class="pre">f</span></code> viewed as a series in <code class="code docutils literal notranslate"><span class="pre">x</span></code> may result in an infinite loop if <code class="code docutils literal notranslate"><span class="pre">f</span></code> has no non-zero terms.</p>
 </dd>
 </dl>
 <dl class="simple" id="index-8">
-<dt><span class="spadfun">order</span>: (%, Var, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">order(f,</span> <span class="pre">x,</span> <span class="pre">n)</span></code> returns <code class="docutils literal notranslate"><span class="pre">min(n,</span> <span class="pre">order(f,</span> <span class="pre">x))</span></code>.</p>
+<dt><span class="spadfun">order</span>: (%, Var, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">order(f,</span> <span class="pre">x,</span> <span class="pre">n)</span></code> returns <code class="code docutils literal notranslate"><span class="pre">min(n,</span> <span class="pre">order(f,</span> <span class="pre">x))</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="l4d756c7469766172696174655461796c6f7253657269657343617465676f7279-7069">
@@ -384,11 +380,11 @@
 </dd>
 </dl>
 <span id="l4d756c7469766172696174655461796c6f7253657269657343617465676f7279-706f6c796e6f6d69616c"></span><dl class="simple" id="index-9">
-<dt><span class="spadfun">polynomial</span>: (%, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; <a class="reference internal" href="Polynomial.html#l506f6c796e6f6d69616c"><span class="std std-ref">Polynomial</span></a> Coef</dt><dd><p><code class="docutils literal notranslate"><span class="pre">polynomial(f,</span> <span class="pre">k)</span></code> returns a polynomial consisting of the sum of all terms of <code class="docutils literal notranslate"><span class="pre">f</span></code> of degree <code class="docutils literal notranslate"><span class="pre">&lt;=</span> <span class="pre">k</span></code>.</p>
+<dt><span class="spadfun">polynomial</span>: (%, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; <a class="reference internal" href="Polynomial.html#l506f6c796e6f6d69616c"><span class="std std-ref">Polynomial</span></a> Coef</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">polynomial(f,</span> <span class="pre">k)</span></code> returns a polynomial consisting of the sum of all terms of <code class="code docutils literal notranslate"><span class="pre">f</span></code> of degree <code class="code docutils literal notranslate"><span class="pre">&lt;=</span> <span class="pre">k</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="index-10">
-<dt><span class="spadfun">polynomial</span>: (%, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; <a class="reference internal" href="Polynomial.html#l506f6c796e6f6d69616c"><span class="std std-ref">Polynomial</span></a> Coef</dt><dd><p><code class="docutils literal notranslate"><span class="pre">polynomial(f,</span> <span class="pre">k1,</span> <span class="pre">k2)</span></code> returns a polynomial consisting of the sum of all terms of <code class="docutils literal notranslate"><span class="pre">f</span></code> of degree <code class="docutils literal notranslate"><span class="pre">d</span></code> with <code class="docutils literal notranslate"><span class="pre">k1</span> <span class="pre">&lt;=</span> <span class="pre">d</span> <span class="pre">&lt;=</span> <span class="pre">k2</span></code>.</p>
+<dt><span class="spadfun">polynomial</span>: (%, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; <a class="reference internal" href="Polynomial.html#l506f6c796e6f6d69616c"><span class="std std-ref">Polynomial</span></a> Coef</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">polynomial(f,</span> <span class="pre">k1,</span> <span class="pre">k2)</span></code> returns a polynomial consisting of the sum of all terms of <code class="code docutils literal notranslate"><span class="pre">f</span></code> of degree <code class="code docutils literal notranslate"><span class="pre">d</span></code> with <code class="code docutils literal notranslate"><span class="pre">k1</span> <span class="pre">&lt;=</span> <span class="pre">d</span> <span class="pre">&lt;=</span> <span class="pre">k2</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="l4d756c7469766172696174655461796c6f7253657269657343617465676f7279-7265636970">
@@ -537,6 +533,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -577,7 +574,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

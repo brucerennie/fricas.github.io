@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,14 +45,14 @@
             
   <section id="abelianmonoid">
 <span id="l4162656c69616e4d6f6e6f6964"></span><span id="index-0"></span><h1>AbelianMonoid<a class="headerlink" href="#abelianmonoid" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/catdef.spad#L37">catdef.spad line 37</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/catdef.spad#L37">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/catdef.spad#L37">catdef.spad line 37</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/catdef.spad#L37">[edit on github]</a></p>
 <p>The class of additive (commutative) monoids, i.e. semigroups with an additive identity element.</p>
 <span id="l4162656c69616e4d6f6e6f6964-30"></span><dl class="simple" id="index-1">
 <dt><span class="spadfun">0</span>: %</dt><dd><p>0 is the additive identity element.</p>
 </dd>
 </dl>
 <span id="l4162656c69616e4d6f6e6f6964-2a"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">*</span>: (<a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>, %) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">n</span> <span class="pre">*</span> <span class="pre">x</span></code> is left-multiplication by a non negative integer</p>
+<dt><span class="spadfun">*</span>: (<a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>, %) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">n</span> <span class="pre">*</span> <span class="pre">x</span></code> is left-multiplication by a non negative integer</p>
 </dd>
 <dt><a class="reference internal" href="AbelianSemiGroup.html#l4162656c69616e53656d6947726f7570-2a"><span class="std std-ref">*</span></a>: (<a class="reference internal" href="PositiveInteger.html#l506f736974697665496e7465676572"><span class="std std-ref">PositiveInteger</span></a>, %) -&gt; %</dt><dd><p>from <a class="reference internal" href="AbelianSemiGroup.html#l4162656c69616e53656d6947726f7570"><span class="std std-ref">AbelianSemiGroup</span></a></p>
 </dd>
@@ -78,15 +78,15 @@
 </dd>
 </dl>
 <span id="l4162656c69616e4d6f6e6f6964-6f70706f736974653f"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">opposite?</span>: (%, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">opposite?(x,y)</span></code> holds if the sum of <code class="docutils literal notranslate"><span class="pre">x</span></code> and <code class="docutils literal notranslate"><span class="pre">y</span></code> is <code class="docutils literal notranslate"><span class="pre">0</span></code>.</p>
+<dt><span class="spadfun">opposite?</span>: (%, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">opposite?(x,y)</span></code> holds if the sum of <code class="code docutils literal notranslate"><span class="pre">x</span></code> and <code class="code docutils literal notranslate"><span class="pre">y</span></code> is <code class="code docutils literal notranslate"><span class="pre">0</span></code>.</p>
 </dd>
 </dl>
 <span id="l4162656c69616e4d6f6e6f6964-73616d706c65"></span><dl class="simple" id="index-4">
-<dt><span class="spadfun">sample</span>: %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">sample</span> <span class="pre">yields</span></code> a value of type %</p>
+<dt><span class="spadfun">sample</span>: %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">sample</span> <span class="pre">yields</span></code> a value of type %</p>
 </dd>
 </dl>
 <span id="l4162656c69616e4d6f6e6f6964-7a65726f3f"></span><dl class="simple" id="index-5">
-<dt><span class="spadfun">zero?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">zero?(x)</span></code> tests if <code class="docutils literal notranslate"><span class="pre">x</span></code> is equal to 0.</p>
+<dt><span class="spadfun">zero?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">zero?(x)</span></code> tests if <code class="code docutils literal notranslate"><span class="pre">x</span></code> is equal to 0.</p>
 </dd>
 </dl>
 <p><a class="reference internal" href="AbelianSemiGroup.html#l4162656c69616e53656d6947726f7570"><span class="std std-ref">AbelianSemiGroup</span></a></p>
@@ -107,6 +107,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -147,7 +148,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

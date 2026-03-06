@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="xrecursivepolynomial-varset-r">
 <span id="l58526563757273697665506f6c796e6f6d69616c"></span><span id="index-0"></span><h1>XRecursivePolynomial(VarSet, R)<a class="headerlink" href="#xrecursivepolynomial-varset-r" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/xpoly.spad#L416">xpoly.spad line 416</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/xpoly.spad#L416">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/xpoly.spad#L407">xpoly.spad line 407</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/xpoly.spad#L407">[edit on github]</a></p>
 <ul class="simple">
 <li><p>VarSet: <a class="reference internal" href="OrderedSet.html#l4f726465726564536574"><span class="std std-ref">OrderedSet</span></a></p></li>
 <li><p>R: <a class="reference internal" href="Ring.html#l52696e67"><span class="std std-ref">Ring</span></a></p></li>
@@ -166,7 +166,7 @@
 </dd>
 </dl>
 <span id="l58526563757273697665506f6c796e6f6d69616c-657870616e64"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">expand</span>: % -&gt; <a class="reference internal" href="XDistributedPolynomial.html#l584469737472696275746564506f6c796e6f6d69616c"><span class="std std-ref">XDistributedPolynomial</span></a>(VarSet, R)</dt><dd><p><code class="docutils literal notranslate"><span class="pre">expand(p)</span></code> returns <code class="docutils literal notranslate"><span class="pre">p</span></code> in distributed form.</p>
+<dt><span class="spadfun">expand</span>: % -&gt; <a class="reference internal" href="XDistributedPolynomial.html#l584469737472696275746564506f6c796e6f6d69616c"><span class="std std-ref">XDistributedPolynomial</span></a>(VarSet, R)</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">expand(p)</span></code> returns <code class="code docutils literal notranslate"><span class="pre">p</span></code> in distributed form.</p>
 </dd>
 </dl>
 <dl class="simple" id="l58526563757273697665506f6c796e6f6d69616c-6c61746578">
@@ -280,7 +280,7 @@
 </dd>
 </dl>
 <span id="l58526563757273697665506f6c796e6f6d69616c-52656d61696e6465724c697374"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">RemainderList</span>: % -&gt; <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> Record(k: VarSet, c: %)</dt><dd><p><code class="docutils literal notranslate"><span class="pre">RemainderList(p)</span></code> returns the regular part of <code class="docutils literal notranslate"><span class="pre">p</span></code> as a list of terms.</p>
+<dt><span class="spadfun">RemainderList</span>: % -&gt; <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> Record(k: VarSet, c: %)</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">RemainderList(p)</span></code> returns the regular part of <code class="code docutils literal notranslate"><span class="pre">p</span></code> as a list of terms.</p>
 </dd>
 </dl>
 <dl class="simple" id="l58526563757273697665506f6c796e6f6d69616c-72657472616374">
@@ -340,7 +340,7 @@
 </dd>
 </dl>
 <span id="l58526563757273697665506f6c796e6f6d69616c-756e657870616e64"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">unexpand</span>: <a class="reference internal" href="XDistributedPolynomial.html#l584469737472696275746564506f6c796e6f6d69616c"><span class="std std-ref">XDistributedPolynomial</span></a>(VarSet, R) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">unexpand(p)</span></code> returns <code class="docutils literal notranslate"><span class="pre">p</span></code> in recursive form.</p>
+<dt><span class="spadfun">unexpand</span>: <a class="reference internal" href="XDistributedPolynomial.html#l584469737472696275746564506f6c796e6f6d69616c"><span class="std std-ref">XDistributedPolynomial</span></a>(VarSet, R) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">unexpand(p)</span></code> returns <code class="code docutils literal notranslate"><span class="pre">p</span></code> in recursive form.</p>
 </dd>
 </dl>
 <dl class="simple" id="l58526563757273697665506f6c796e6f6d69616c-7661724c697374">
@@ -407,6 +407,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -447,7 +448,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

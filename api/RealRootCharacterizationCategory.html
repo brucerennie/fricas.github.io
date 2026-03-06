@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="realrootcharacterizationcategory-thefield-thepols">
 <span id="l5265616c526f6f74436861726163746572697a6174696f6e43617465676f7279"></span><span id="index-0"></span><h1>RealRootCharacterizationCategory(TheField, ThePols)<a class="headerlink" href="#realrootcharacterizationcategory-thefield-thepols" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/reclos.spad#L170">reclos.spad line 170</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/reclos.spad#L170">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/reclos.spad#L165">reclos.spad line 165</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/reclos.spad#L165">[edit on github]</a></p>
 <ul class="simple">
 <li><p>TheField: Join(<a class="reference internal" href="OrderedRing.html#l4f72646572656452696e67"><span class="std std-ref">OrderedRing</span></a>, <a class="reference internal" href="Field.html#l4669656c64"><span class="std std-ref">Field</span></a>)</p></li>
 <li><p>ThePols: <a class="reference internal" href="UnivariatePolynomialCategory.html#l556e6976617269617465506f6c796e6f6d69616c43617465676f7279"><span class="std std-ref">UnivariatePolynomialCategory</span></a> TheField</p></li>
@@ -60,11 +60,11 @@
 </dd>
 </dl>
 <span id="l5265616c526f6f74436861726163746572697a6174696f6e43617465676f7279-616c6c526f6f74734f66"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">allRootsOf</span>: ThePols -&gt; <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">allRootsOf(pol)</span></code> creates all the roots of <code class="docutils literal notranslate"><span class="pre">pol</span></code> in the Real Closure, assumed in order.</p>
+<dt><span class="spadfun">allRootsOf</span>: ThePols -&gt; <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">allRootsOf(pol)</span></code> creates all the roots of <code class="code docutils literal notranslate"><span class="pre">pol</span></code> in the Real Closure, assumed in order.</p>
 </dd>
 </dl>
 <span id="l5265616c526f6f74436861726163746572697a6174696f6e43617465676f7279-617070726f78696d617465"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">approximate</span>: (ThePols, %, TheField) -&gt; TheField</dt><dd><p><code class="docutils literal notranslate"><span class="pre">approximate(term,</span> <span class="pre">root,</span> <span class="pre">prec)</span></code> gives an approximation of <code class="docutils literal notranslate"><span class="pre">term</span></code> over <code class="docutils literal notranslate"><span class="pre">root</span></code> with precision <code class="docutils literal notranslate"><span class="pre">prec</span></code></p>
+<dt><span class="spadfun">approximate</span>: (ThePols, %, TheField) -&gt; TheField</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">approximate(term,</span> <span class="pre">root,</span> <span class="pre">prec)</span></code> gives an approximation of <code class="code docutils literal notranslate"><span class="pre">term</span></code> over <code class="code docutils literal notranslate"><span class="pre">root</span></code> with precision <code class="code docutils literal notranslate"><span class="pre">prec</span></code></p>
 </dd>
 </dl>
 <dl class="simple" id="l5265616c526f6f74436861726163746572697a6174696f6e43617465676f7279-636f65726365">
@@ -72,7 +72,7 @@
 </dd>
 </dl>
 <span id="l5265616c526f6f74436861726163746572697a6174696f6e43617465676f7279-646566696e696e67506f6c796e6f6d69616c"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">definingPolynomial</span>: % -&gt; ThePols</dt><dd><p><code class="docutils literal notranslate"><span class="pre">definingPolynomial(aRoot)</span></code> gives a polynomial such that <code class="docutils literal notranslate"><span class="pre">definingPolynomial(aRoot).aRoot</span> <span class="pre">=</span> <span class="pre">0</span></code></p>
+<dt><span class="spadfun">definingPolynomial</span>: % -&gt; ThePols</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">definingPolynomial(aRoot)</span></code> gives a polynomial such that <code class="code docutils literal notranslate"><span class="pre">definingPolynomial(aRoot).aRoot</span> <span class="pre">=</span> <span class="pre">0</span></code></p>
 </dd>
 </dl>
 <dl class="simple" id="l5265616c526f6f74436861726163746572697a6174696f6e43617465676f7279-6c61746578">
@@ -80,31 +80,31 @@
 </dd>
 </dl>
 <span id="l5265616c526f6f74436861726163746572697a6174696f6e43617465676f7279-6e656761746976653f"></span><dl class="simple" id="index-4">
-<dt><span class="spadfun">negative?</span>: (ThePols, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">negative?(pol,</span> <span class="pre">aRoot)</span></code> answers if <code class="docutils literal notranslate"><span class="pre">pol</span></code> interpreted as <code class="docutils literal notranslate"><span class="pre">aRoot</span></code> is negative</p>
+<dt><span class="spadfun">negative?</span>: (ThePols, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">negative?(pol,</span> <span class="pre">aRoot)</span></code> answers if <code class="code docutils literal notranslate"><span class="pre">pol</span></code> interpreted as <code class="code docutils literal notranslate"><span class="pre">aRoot</span></code> is negative</p>
 </dd>
 </dl>
 <span id="l5265616c526f6f74436861726163746572697a6174696f6e43617465676f7279-706f7369746976653f"></span><dl class="simple" id="index-5">
-<dt><span class="spadfun">positive?</span>: (ThePols, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">positive?(pol,</span> <span class="pre">aRoot)</span></code> answers if <code class="docutils literal notranslate"><span class="pre">pol</span></code> interpreted as <code class="docutils literal notranslate"><span class="pre">aRoot</span></code> is positive</p>
+<dt><span class="spadfun">positive?</span>: (ThePols, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">positive?(pol,</span> <span class="pre">aRoot)</span></code> answers if <code class="code docutils literal notranslate"><span class="pre">pol</span></code> interpreted as <code class="code docutils literal notranslate"><span class="pre">aRoot</span></code> is positive</p>
 </dd>
 </dl>
 <span id="l5265616c526f6f74436861726163746572697a6174696f6e43617465676f7279-7265636970"></span><dl class="simple" id="index-6">
-<dt><span class="spadfun">recip</span>: (ThePols, %) -&gt; Union(ThePols, failed)</dt><dd><p><code class="docutils literal notranslate"><span class="pre">recip(pol,</span> <span class="pre">aRoot)</span></code> tries to inverse <code class="docutils literal notranslate"><span class="pre">pol</span></code> interpreted as <code class="docutils literal notranslate"><span class="pre">aRoot</span></code></p>
+<dt><span class="spadfun">recip</span>: (ThePols, %) -&gt; Union(ThePols, failed)</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">recip(pol,</span> <span class="pre">aRoot)</span></code> tries to inverse <code class="code docutils literal notranslate"><span class="pre">pol</span></code> interpreted as <code class="code docutils literal notranslate"><span class="pre">aRoot</span></code></p>
 </dd>
 </dl>
 <span id="l5265616c526f6f74436861726163746572697a6174696f6e43617465676f7279-72656c6174697665417070726f78"></span><dl class="simple" id="index-7">
-<dt><span class="spadfun">relativeApprox</span>: (ThePols, %, TheField) -&gt; TheField</dt><dd><p><code class="docutils literal notranslate"><span class="pre">approximate(term,</span> <span class="pre">root,</span> <span class="pre">prec)</span></code> gives an approximation of <code class="docutils literal notranslate"><span class="pre">term</span></code> over <code class="docutils literal notranslate"><span class="pre">root</span></code> with precision <code class="docutils literal notranslate"><span class="pre">prec</span></code></p>
+<dt><span class="spadfun">relativeApprox</span>: (ThePols, %, TheField) -&gt; TheField</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">approximate(term,</span> <span class="pre">root,</span> <span class="pre">prec)</span></code> gives an approximation of <code class="code docutils literal notranslate"><span class="pre">term</span></code> over <code class="code docutils literal notranslate"><span class="pre">root</span></code> with precision <code class="code docutils literal notranslate"><span class="pre">prec</span></code></p>
 </dd>
 </dl>
 <span id="l5265616c526f6f74436861726163746572697a6174696f6e43617465676f7279-726f6f744f66"></span><dl class="simple" id="index-8">
-<dt><span class="spadfun">rootOf</span>: (ThePols, <a class="reference internal" href="PositiveInteger.html#l506f736974697665496e7465676572"><span class="std std-ref">PositiveInteger</span></a>) -&gt; Union(%, failed)</dt><dd><p><code class="docutils literal notranslate"><span class="pre">rootOf(pol,</span> <span class="pre">n)</span></code> gives the <code class="docutils literal notranslate"><span class="pre">n</span></code>th root for the order of the Real Closure</p>
+<dt><span class="spadfun">rootOf</span>: (ThePols, <a class="reference internal" href="PositiveInteger.html#l506f736974697665496e7465676572"><span class="std std-ref">PositiveInteger</span></a>) -&gt; Union(%, failed)</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">rootOf(pol,</span> <span class="pre">n)</span></code> gives the <code class="code docutils literal notranslate"><span class="pre">n</span></code>th root for the order of the Real Closure</p>
 </dd>
 </dl>
 <span id="l5265616c526f6f74436861726163746572697a6174696f6e43617465676f7279-7369676e"></span><dl class="simple" id="index-9">
-<dt><span class="spadfun">sign</span>: (ThePols, %) -&gt; <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">sign(pol,</span> <span class="pre">aRoot)</span></code> gives the sign of <code class="docutils literal notranslate"><span class="pre">pol</span></code> interpreted as <code class="docutils literal notranslate"><span class="pre">aRoot</span></code></p>
+<dt><span class="spadfun">sign</span>: (ThePols, %) -&gt; <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">sign(pol,</span> <span class="pre">aRoot)</span></code> gives the sign of <code class="code docutils literal notranslate"><span class="pre">pol</span></code> interpreted as <code class="code docutils literal notranslate"><span class="pre">aRoot</span></code></p>
 </dd>
 </dl>
 <span id="l5265616c526f6f74436861726163746572697a6174696f6e43617465676f7279-7a65726f3f"></span><dl class="simple" id="index-10">
-<dt><span class="spadfun">zero?</span>: (ThePols, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">zero?(pol,</span> <span class="pre">aRoot)</span></code> answers if <code class="docutils literal notranslate"><span class="pre">pol</span></code> interpreted as <code class="docutils literal notranslate"><span class="pre">aRoot</span></code> is <code class="docutils literal notranslate"><span class="pre">0</span></code></p>
+<dt><span class="spadfun">zero?</span>: (ThePols, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">zero?(pol,</span> <span class="pre">aRoot)</span></code> answers if <code class="code docutils literal notranslate"><span class="pre">pol</span></code> interpreted as <code class="code docutils literal notranslate"><span class="pre">aRoot</span></code> is <code class="code docutils literal notranslate"><span class="pre">0</span></code></p>
 </dd>
 </dl>
 <p><a class="reference internal" href="BasicType.html#l426173696354797065"><span class="std std-ref">BasicType</span></a></p>
@@ -124,6 +124,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -164,7 +165,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

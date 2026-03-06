@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="generalizedunivariatepowerseries-coef-expon-var-cen">
 <span id="l47656e6572616c697a6564556e6976617269617465506f776572536572696573"></span><span id="index-0"></span><h1>GeneralizedUnivariatePowerSeries(Coef, Expon, var, cen)<a class="headerlink" href="#generalizedunivariatepowerseries-coef-expon-var-cen" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/genser.spad#L194">genser.spad line 194</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/genser.spad#L194">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/genser.spad#L194">genser.spad line 194</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/genser.spad#L194">[edit on github]</a></p>
 <ul class="simple">
 <li><p>Coef: <a class="reference internal" href="Ring.html#l52696e67"><span class="std std-ref">Ring</span></a></p></li>
 <li><p>Expon: Join(<a class="reference internal" href="OrderedAbelianMonoid.html#l4f7264657265644162656c69616e4d6f6e6f6964"><span class="std std-ref">OrderedAbelianMonoid</span></a>, <a class="reference internal" href="SemiRing.html#l53656d6952696e67"><span class="std std-ref">SemiRing</span></a>)</p></li>
@@ -146,7 +146,7 @@
 </dd>
 </dl>
 <span id="l47656e6572616c697a6564556e6976617269617465506f776572536572696573-6170706c795f7461796c6f72"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">apply_taylor</span>: (<a class="reference internal" href="Stream.html#l53747265616d"><span class="std std-ref">Stream</span></a> Coef, %) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">apply_taylor(ts,</span> <span class="pre">s)</span></code> applies Taylor series with coefficients <code class="docutils literal notranslate"><span class="pre">ts</span></code> to <code class="docutils literal notranslate"><span class="pre">s</span></code>, that is computes infinite sum <code class="docutils literal notranslate"><span class="pre">ts</span></code>(0) + <code class="docutils literal notranslate"><span class="pre">ts</span></code>(1)<code class="docutils literal notranslate"><span class="pre">*s</span></code> + <code class="docutils literal notranslate"><span class="pre">ts</span></code>(2)<code class="docutils literal notranslate"><span class="pre">*s^2</span></code> + … Note: <code class="docutils literal notranslate"><span class="pre">s</span></code> must be of positive order</p>
+<dt><span class="spadfun">apply_taylor</span>: (<a class="reference internal" href="Stream.html#l53747265616d"><span class="std std-ref">Stream</span></a> Coef, %) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">apply_taylor(ts,</span> <span class="pre">s)</span></code> applies Taylor series with coefficients <code class="code docutils literal notranslate"><span class="pre">ts</span></code> to <code class="code docutils literal notranslate"><span class="pre">s</span></code>, that is computes infinite sum <code class="code docutils literal notranslate"><span class="pre">ts</span></code>(0) + <code class="code docutils literal notranslate"><span class="pre">ts</span></code>(1)<code class="code docutils literal notranslate"><span class="pre">*s</span></code> + <code class="code docutils literal notranslate"><span class="pre">ts</span></code>(2)<code class="code docutils literal notranslate"><span class="pre">*s^2</span></code> + … Note: <code class="code docutils literal notranslate"><span class="pre">s</span></code> must be of positive order</p>
 </dd>
 </dl>
 <dl class="simple" id="l47656e6572616c697a6564556e6976617269617465506f776572536572696573-617070726f78696d617465">
@@ -191,10 +191,6 @@
 </dl>
 <dl class="simple" id="l47656e6572616c697a6564556e6976617269617465506f776572536572696573-6368617261637465726973746963">
 <dt><a class="reference internal" href="NonAssociativeRing.html#l4e6f6e4173736f6369617469766552696e67-6368617261637465726973746963"><span class="std std-ref">characteristic</span></a>: () -&gt; <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a></dt><dd><p>from <a class="reference internal" href="NonAssociativeRing.html#l4e6f6e4173736f6369617469766552696e67"><span class="std std-ref">NonAssociativeRing</span></a></p>
-</dd>
-</dl>
-<dl class="simple" id="l47656e6572616c697a6564556e6976617269617465506f776572536572696573-636861727468526f6f74">
-<dt><a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f-636861727468526f6f74"><span class="std std-ref">charthRoot</span></a>: % -&gt; Union(%, failed) if Coef has <a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f"><span class="std std-ref">CharacteristicNonZero</span></a></dt><dd><p>from <a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f"><span class="std std-ref">CharacteristicNonZero</span></a></p>
 </dd>
 </dl>
 <dl class="simple" id="l47656e6572616c697a6564556e6976617269617465506f776572536572696573-636f656666696369656e74">
@@ -340,7 +336,7 @@
 </dd>
 </dl>
 <span id="l47656e6572616c697a6564556e6976617269617465506f776572536572696573-696e6673756d"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">infsum</span>: <a class="reference internal" href="Stream.html#l53747265616d"><span class="std std-ref">Stream</span></a> % -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">infsum(x)</span></code> computes sum of all elements of <code class="docutils literal notranslate"><span class="pre">x</span></code>. Degrees of elements of <code class="docutils literal notranslate"><span class="pre">x</span></code> must be nondecreasing and tend to infinity.</p>
+<dt><span class="spadfun">infsum</span>: <a class="reference internal" href="Stream.html#l53747265616d"><span class="std std-ref">Stream</span></a> % -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">infsum(x)</span></code> computes sum of all elements of <code class="code docutils literal notranslate"><span class="pre">x</span></code>. Degrees of elements of <code class="code docutils literal notranslate"><span class="pre">x</span></code> must be nondecreasing and tend to infinity.</p>
 </dd>
 </dl>
 <dl class="simple" id="l47656e6572616c697a6564556e6976617269617465506f776572536572696573-696e76">
@@ -462,7 +458,7 @@
 </dd>
 </dl>
 <span id="l47656e6572616c697a6564556e6976617269617465506f776572536572696573-72656d6f76655a65726f73"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">removeZeros</span>: (%, Expon) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">removeZeros(s,</span> <span class="pre">k)</span></code> removes leading zero terms in <code class="docutils literal notranslate"><span class="pre">s</span></code> with exponent smaller than <code class="docutils literal notranslate"><span class="pre">k</span></code></p>
+<dt><span class="spadfun">removeZeros</span>: (%, Expon) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">removeZeros(s,</span> <span class="pre">k)</span></code> removes leading zero terms in <code class="code docutils literal notranslate"><span class="pre">s</span></code> with exponent smaller than <code class="code docutils literal notranslate"><span class="pre">k</span></code></p>
 </dd>
 </dl>
 <dl class="simple" id="l47656e6572616c697a6564556e6976617269617465506f776572536572696573-7269676874506f776572">
@@ -633,6 +629,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -673,7 +670,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,17 +45,17 @@
             
   <section id="symmetricfunctions-r">
 <span id="l53796d6d657472696346756e6374696f6e73"></span><span id="index-0"></span><h1>SymmetricFunctions R<a class="headerlink" href="#symmetricfunctions-r" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/efstruc.spad#L1">efstruc.spad line 1</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/efstruc.spad#L1">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/efstruc.spad#L1">efstruc.spad line 1</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/efstruc.spad#L1">[edit on github]</a></p>
 <ul class="simple">
 <li><p>R: <a class="reference internal" href="Ring.html#l52696e67"><span class="std std-ref">Ring</span></a></p></li>
 </ul>
-<p>Computes all the symmetric functions in <code class="docutils literal notranslate"><span class="pre">n</span></code> variables.</p>
+<p>Computes all the symmetric functions in <code class="code docutils literal notranslate"><span class="pre">n</span></code> variables.</p>
 <span id="l53796d6d657472696346756e6374696f6e73-73796d46756e63"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">symFunc</span>: (R, <a class="reference internal" href="PositiveInteger.html#l506f736974697665496e7465676572"><span class="std std-ref">PositiveInteger</span></a>) -&gt; <a class="reference internal" href="Vector.html#l566563746f72"><span class="std std-ref">Vector</span></a> R</dt><dd><p><code class="docutils literal notranslate"><span class="pre">symFunc(r,</span> <span class="pre">n)</span></code> returns the vector of the elementary symmetric functions in <code class="docutils literal notranslate"><span class="pre">[r,</span> <span class="pre">r,</span> <span class="pre">...,</span> <span class="pre">r]</span></code> <code class="docutils literal notranslate"><span class="pre">n</span></code> times.</p>
+<dt><span class="spadfun">symFunc</span>: (R, <a class="reference internal" href="PositiveInteger.html#l506f736974697665496e7465676572"><span class="std std-ref">PositiveInteger</span></a>) -&gt; <a class="reference internal" href="Vector.html#l566563746f72"><span class="std std-ref">Vector</span></a> R</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">symFunc(r,</span> <span class="pre">n)</span></code> returns the vector of the elementary symmetric functions in <code class="code docutils literal notranslate"><span class="pre">[r,</span> <span class="pre">r,</span> <span class="pre">...,</span> <span class="pre">r]</span></code> <code class="code docutils literal notranslate"><span class="pre">n</span></code> times.</p>
 </dd>
 </dl>
 <dl class="simple" id="index-2">
-<dt><span class="spadfun">symFunc</span>: <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> R -&gt; <a class="reference internal" href="Vector.html#l566563746f72"><span class="std std-ref">Vector</span></a> R</dt><dd><p><code class="docutils literal notranslate"><span class="pre">symFunc([r1,</span> <span class="pre">...,</span> <span class="pre">rn])</span></code> returns the vector of the elementary symmetric functions in the <code class="docutils literal notranslate"><span class="pre">ri's</span></code>: <code class="docutils literal notranslate"><span class="pre">[r1</span> <span class="pre">+</span> <span class="pre">...</span> <span class="pre">+</span> <span class="pre">rn,</span> <span class="pre">r1</span> <span class="pre">r2</span> <span class="pre">+</span> <span class="pre">...</span> <span class="pre">+</span> <span class="pre">r(n-1)</span> <span class="pre">rn,</span> <span class="pre">...,</span> <span class="pre">r1</span> <span class="pre">r2</span> <span class="pre">...</span> <span class="pre">rn]</span></code>.</p>
+<dt><span class="spadfun">symFunc</span>: <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> R -&gt; <a class="reference internal" href="Vector.html#l566563746f72"><span class="std std-ref">Vector</span></a> R</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">symFunc([r1,</span> <span class="pre">...,</span> <span class="pre">rn])</span></code> returns the vector of the elementary symmetric functions in the <code class="code docutils literal notranslate"><span class="pre">ri's</span></code>: <code class="code docutils literal notranslate"><span class="pre">[r1</span> <span class="pre">+</span> <span class="pre">...</span> <span class="pre">+</span> <span class="pre">rn,</span> <span class="pre">r1</span> <span class="pre">r2</span> <span class="pre">+</span> <span class="pre">...</span> <span class="pre">+</span> <span class="pre">r(n-1)</span> <span class="pre">rn,</span> <span class="pre">...,</span> <span class="pre">r1</span> <span class="pre">r2</span> <span class="pre">...</span> <span class="pre">rn]</span></code>.</p>
 </dd>
 </dl>
 </section>
@@ -72,6 +72,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -112,7 +113,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

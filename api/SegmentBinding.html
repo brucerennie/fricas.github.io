@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,11 +45,11 @@
             
   <section id="segmentbinding-s">
 <span id="l5365676d656e7442696e64696e67"></span><span id="index-0"></span><h1>SegmentBinding S<a class="headerlink" href="#segmentbinding-s" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/seg.spad#L221">seg.spad line 221</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/seg.spad#L221">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/seg.spad#L221">seg.spad line 221</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/seg.spad#L221">[edit on github]</a></p>
 <ul class="simple">
 <li><p>S: <a class="reference internal" href="Type.html#l54797065"><span class="std std-ref">Type</span></a></p></li>
 </ul>
-<p>This domain is used to provide the function argument syntax <code class="docutils literal notranslate"><span class="pre">v=a..b</span></code>. This is used, for example, by the top-level <span class="spadfun">draw</span> functions.</p>
+<p>This domain is used to provide the function argument syntax <code class="code docutils literal notranslate"><span class="pre">v=a..b</span></code>. This is used, for example, by the top-level <span class="spadfun">draw</span> functions.</p>
 <dl class="simple" id="l5365676d656e7442696e64696e67-3d">
 <dt><a class="reference internal" href="BasicType.html#l426173696354797065-3d"><span class="std std-ref">=</span></a>: (%, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a> if S has <a class="reference internal" href="SetCategory.html#l53657443617465676f7279"><span class="std std-ref">SetCategory</span></a></dt><dd><p>from <a class="reference internal" href="BasicType.html#l426173696354797065"><span class="std std-ref">BasicType</span></a></p>
 </dd>
@@ -67,7 +67,7 @@
 </dd>
 </dl>
 <span id="l5365676d656e7442696e64696e67-6571756174696f6e"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">equation</span>: (<a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a>, <a class="reference internal" href="Segment.html#l5365676d656e74"><span class="std std-ref">Segment</span></a> S) -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">equation(v,</span> <span class="pre">a..b)</span></code> creates a segment binding value with variable <code class="docutils literal notranslate"><span class="pre">v</span></code> and segment <code class="docutils literal notranslate"><span class="pre">a..b</span></code>. Note that the interpreter parses <code class="docutils literal notranslate"><span class="pre">v=a..b</span></code> to this form.</p>
+<dt><span class="spadfun">equation</span>: (<a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a>, <a class="reference internal" href="Segment.html#l5365676d656e74"><span class="std std-ref">Segment</span></a> S) -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">equation(v,</span> <span class="pre">a..b)</span></code> creates a segment binding value with variable <code class="code docutils literal notranslate"><span class="pre">v</span></code> and segment <code class="code docutils literal notranslate"><span class="pre">a..b</span></code>. Note that the interpreter parses <code class="code docutils literal notranslate"><span class="pre">v=a..b</span></code> to this form.</p>
 </dd>
 </dl>
 <dl class="simple" id="l5365676d656e7442696e64696e67-6c61746578">
@@ -75,11 +75,11 @@
 </dd>
 </dl>
 <span id="l5365676d656e7442696e64696e67-7365676d656e74"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">segment</span>: % -&gt; <a class="reference internal" href="Segment.html#l5365676d656e74"><span class="std std-ref">Segment</span></a> S</dt><dd><p><code class="docutils literal notranslate"><span class="pre">segment(segb)</span></code> returns the segment from the right hand side of the <a class="reference internal" href="#l5365676d656e7442696e64696e67"><span class="std std-ref">SegmentBinding</span></a>. For example, if <code class="docutils literal notranslate"><span class="pre">segb</span></code> is <code class="docutils literal notranslate"><span class="pre">v=a..b</span></code>, then <code class="docutils literal notranslate"><span class="pre">segment(segb)</span></code> returns <code class="docutils literal notranslate"><span class="pre">a..b</span></code>.</p>
+<dt><span class="spadfun">segment</span>: % -&gt; <a class="reference internal" href="Segment.html#l5365676d656e74"><span class="std std-ref">Segment</span></a> S</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">segment(segb)</span></code> returns the segment from the right hand side of the <a class="reference internal" href="#l5365676d656e7442696e64696e67"><span class="std std-ref">SegmentBinding</span></a>. For example, if <code class="code docutils literal notranslate"><span class="pre">segb</span></code> is <code class="code docutils literal notranslate"><span class="pre">v=a..b</span></code>, then <code class="code docutils literal notranslate"><span class="pre">segment(segb)</span></code> returns <code class="code docutils literal notranslate"><span class="pre">a..b</span></code>.</p>
 </dd>
 </dl>
 <span id="l5365676d656e7442696e64696e67-7661726961626c65"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">variable</span>: % -&gt; <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">variable(segb)</span></code> returns the variable from the left hand side of the <a class="reference internal" href="#l5365676d656e7442696e64696e67"><span class="std std-ref">SegmentBinding</span></a>. For example, if <code class="docutils literal notranslate"><span class="pre">segb</span></code> is <code class="docutils literal notranslate"><span class="pre">v=a..b</span></code>, then <code class="docutils literal notranslate"><span class="pre">variable(segb)</span></code> returns <code class="docutils literal notranslate"><span class="pre">v</span></code>.</p>
+<dt><span class="spadfun">variable</span>: % -&gt; <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">variable(segb)</span></code> returns the variable from the left hand side of the <a class="reference internal" href="#l5365676d656e7442696e64696e67"><span class="std std-ref">SegmentBinding</span></a>. For example, if <code class="code docutils literal notranslate"><span class="pre">segb</span></code> is <code class="code docutils literal notranslate"><span class="pre">v=a..b</span></code>, then <code class="code docutils literal notranslate"><span class="pre">variable(segb)</span></code> returns <code class="code docutils literal notranslate"><span class="pre">v</span></code>.</p>
 </dd>
 </dl>
 <p><a class="reference internal" href="BasicType.html#l426173696354797065"><span class="std std-ref">BasicType</span></a> if S has <a class="reference internal" href="SetCategory.html#l53657443617465676f7279"><span class="std std-ref">SetCategory</span></a></p>
@@ -100,6 +100,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -140,7 +141,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

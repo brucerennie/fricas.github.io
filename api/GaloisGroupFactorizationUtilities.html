@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="galoisgroupfactorizationutilities-r-up-f">
 <span id="l47616c6f697347726f7570466163746f72697a6174696f6e5574696c6974696573"></span><span id="index-0"></span><h1>GaloisGroupFactorizationUtilities(R, UP, F)<a class="headerlink" href="#galoisgroupfactorizationutilities-r-up-f" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/galfact.spad#L205">galfact.spad line 205</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/galfact.spad#L205">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/galfact.spad#L205">galfact.spad line 205</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/galfact.spad#L205">[edit on github]</a></p>
 <ul class="simple">
 <li><p>R: <a class="reference internal" href="Ring.html#l52696e67"><span class="std std-ref">Ring</span></a></p></li>
 <li><p>UP: <a class="reference internal" href="UnivariatePolynomialCategory.html#l556e6976617269617465506f6c796e6f6d69616c43617465676f7279"><span class="std std-ref">UnivariatePolynomialCategory</span></a> R</p></li>
@@ -53,47 +53,47 @@
 </ul>
 <p><a class="reference internal" href="#l47616c6f697347726f7570466163746f72697a6174696f6e5574696c6974696573"><span class="std std-ref">GaloisGroupFactorizationUtilities</span></a> provides functions that will be used by the factorizer.</p>
 <span id="l47616c6f697347726f7570466163746f72697a6174696f6e5574696c6974696573-626561757a616d79426f756e64"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">beauzamyBound</span>: UP -&gt; <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">beauzamyBound(p)</span></code> returns a bound on the larger coefficient of any factor of <code class="docutils literal notranslate"><span class="pre">p</span></code>.</p>
+<dt><span class="spadfun">beauzamyBound</span>: UP -&gt; <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">beauzamyBound(p)</span></code> returns a bound on the larger coefficient of any factor of <code class="code docutils literal notranslate"><span class="pre">p</span></code>.</p>
 </dd>
 </dl>
 <span id="l47616c6f697347726f7570466163746f72697a6174696f6e5574696c6974696573-626f6d62696572694e6f726d"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">bombieriNorm</span>: (UP, <a class="reference internal" href="PositiveInteger.html#l506f736974697665496e7465676572"><span class="std std-ref">PositiveInteger</span></a>) -&gt; F</dt><dd><p><code class="docutils literal notranslate"><span class="pre">bombieriNorm(p,</span> <span class="pre">n)</span></code> returns the <code class="docutils literal notranslate"><span class="pre">n</span></code>th Bombieri<code class="docutils literal notranslate"><span class="pre">'s</span></code> norm of <code class="docutils literal notranslate"><span class="pre">p</span></code>.</p>
+<dt><span class="spadfun">bombieriNorm</span>: (UP, <a class="reference internal" href="PositiveInteger.html#l506f736974697665496e7465676572"><span class="std std-ref">PositiveInteger</span></a>) -&gt; F</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">bombieriNorm(p,</span> <span class="pre">n)</span></code> returns the <code class="code docutils literal notranslate"><span class="pre">n</span></code>th Bombieri<code class="code docutils literal notranslate"><span class="pre">'s</span></code> norm of <code class="code docutils literal notranslate"><span class="pre">p</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="index-3">
-<dt><span class="spadfun">bombieriNorm</span>: UP -&gt; F</dt><dd><p><code class="docutils literal notranslate"><span class="pre">bombieriNorm(p)</span></code> returns quadratic Bombieri<code class="docutils literal notranslate"><span class="pre">'s</span></code> norm of <code class="docutils literal notranslate"><span class="pre">p</span></code>.</p>
+<dt><span class="spadfun">bombieriNorm</span>: UP -&gt; F</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">bombieriNorm(p)</span></code> returns quadratic Bombieri<code class="code docutils literal notranslate"><span class="pre">'s</span></code> norm of <code class="code docutils literal notranslate"><span class="pre">p</span></code>.</p>
 </dd>
 </dl>
 <span id="l47616c6f697347726f7570466163746f72697a6174696f6e5574696c6974696573-686569676874"></span><dl class="simple" id="index-4">
-<dt><span class="spadfun">height</span>: UP -&gt; F</dt><dd><p><code class="docutils literal notranslate"><span class="pre">height(p)</span></code> returns the maximal absolute value of the coefficients of the polynomial <code class="docutils literal notranslate"><span class="pre">p</span></code>.</p>
+<dt><span class="spadfun">height</span>: UP -&gt; F</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">height(p)</span></code> returns the maximal absolute value of the coefficients of the polynomial <code class="code docutils literal notranslate"><span class="pre">p</span></code>.</p>
 </dd>
 </dl>
 <span id="l47616c6f697347726f7570466163746f72697a6174696f6e5574696c6974696573-696e66696e6974794e6f726d"></span><dl class="simple" id="index-5">
-<dt><span class="spadfun">infinityNorm</span>: UP -&gt; F</dt><dd><p><code class="docutils literal notranslate"><span class="pre">infinityNorm(f)</span></code> returns the maximal absolute value of the coefficients of the polynomial <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
+<dt><span class="spadfun">infinityNorm</span>: UP -&gt; F</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">infinityNorm(f)</span></code> returns the maximal absolute value of the coefficients of the polynomial <code class="code docutils literal notranslate"><span class="pre">f</span></code>.</p>
 </dd>
 </dl>
 <span id="l47616c6f697347726f7570466163746f72697a6174696f6e5574696c6974696573-6c656e677468"></span><dl class="simple" id="index-6">
-<dt><span class="spadfun">length</span>: UP -&gt; F</dt><dd><p><code class="docutils literal notranslate"><span class="pre">length(p)</span></code> returns the sum of the absolute values of the coefficients of the polynomial <code class="docutils literal notranslate"><span class="pre">p</span></code>.</p>
+<dt><span class="spadfun">length</span>: UP -&gt; F</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">length(p)</span></code> returns the sum of the absolute values of the coefficients of the polynomial <code class="code docutils literal notranslate"><span class="pre">p</span></code>.</p>
 </dd>
 </dl>
 <span id="l47616c6f697347726f7570466163746f72697a6174696f6e5574696c6974696573-6e6f726d"></span><dl class="simple" id="index-7">
-<dt><span class="spadfun">norm</span>: (UP, <a class="reference internal" href="PositiveInteger.html#l506f736974697665496e7465676572"><span class="std std-ref">PositiveInteger</span></a>) -&gt; F</dt><dd><p><code class="docutils literal notranslate"><span class="pre">norm(f,</span> <span class="pre">p)</span></code> returns the <code class="docutils literal notranslate"><span class="pre">lp</span></code> norm of the polynomial <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
+<dt><span class="spadfun">norm</span>: (UP, <a class="reference internal" href="PositiveInteger.html#l506f736974697665496e7465676572"><span class="std std-ref">PositiveInteger</span></a>) -&gt; F</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">norm(f,</span> <span class="pre">p)</span></code> returns the <code class="code docutils literal notranslate"><span class="pre">lp</span></code> norm of the polynomial <code class="code docutils literal notranslate"><span class="pre">f</span></code>.</p>
 </dd>
 </dl>
 <span id="l47616c6f697347726f7570466163746f72697a6174696f6e5574696c6974696573-7175616472617469634e6f726d"></span><dl class="simple" id="index-8">
-<dt><span class="spadfun">quadraticNorm</span>: UP -&gt; F</dt><dd><p><code class="docutils literal notranslate"><span class="pre">quadraticNorm(f)</span></code> returns the <code class="docutils literal notranslate"><span class="pre">l2</span></code> norm of the polynomial <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
+<dt><span class="spadfun">quadraticNorm</span>: UP -&gt; F</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">quadraticNorm(f)</span></code> returns the <code class="code docutils literal notranslate"><span class="pre">l2</span></code> norm of the polynomial <code class="code docutils literal notranslate"><span class="pre">f</span></code>.</p>
 </dd>
 </dl>
 <span id="l47616c6f697347726f7570466163746f72697a6174696f6e5574696c6974696573-726f6f74426f756e64"></span><dl class="simple" id="index-9">
-<dt><span class="spadfun">rootBound</span>: UP -&gt; <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">rootBound(p)</span></code> returns a bound on the largest norm of the complex roots of <code class="docutils literal notranslate"><span class="pre">p</span></code>.</p>
+<dt><span class="spadfun">rootBound</span>: UP -&gt; <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">rootBound(p)</span></code> returns a bound on the largest norm of the complex roots of <code class="code docutils literal notranslate"><span class="pre">p</span></code>.</p>
 </dd>
 </dl>
 <span id="l47616c6f697347726f7570466163746f72697a6174696f6e5574696c6974696573-73696e676c65466163746f72426f756e64"></span><dl class="simple" id="index-10">
-<dt><span class="spadfun">singleFactorBound</span>: (UP, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">singleFactorBound(p,</span> <span class="pre">r)</span></code> returns a bound on the infinite norm of the factor of <code class="docutils literal notranslate"><span class="pre">p</span></code> with smallest Bombieri<code class="docutils literal notranslate"><span class="pre">'s</span></code> norm. <code class="docutils literal notranslate"><span class="pre">r</span></code> is a lower bound for the number of factors of <code class="docutils literal notranslate"><span class="pre">p</span></code>. <code class="docutils literal notranslate"><span class="pre">p</span></code> shall be of degree higher or equal to 2.</p>
+<dt><span class="spadfun">singleFactorBound</span>: (UP, <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a>) -&gt; <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">singleFactorBound(p,</span> <span class="pre">r)</span></code> returns a bound on the infinite norm of the factor of <code class="code docutils literal notranslate"><span class="pre">p</span></code> with smallest Bombieri<code class="code docutils literal notranslate"><span class="pre">'s</span></code> norm. <code class="code docutils literal notranslate"><span class="pre">r</span></code> is a lower bound for the number of factors of <code class="code docutils literal notranslate"><span class="pre">p</span></code>. <code class="code docutils literal notranslate"><span class="pre">p</span></code> shall be of degree higher or equal to 2.</p>
 </dd>
 </dl>
 <dl class="simple" id="index-11">
-<dt><span class="spadfun">singleFactorBound</span>: UP -&gt; <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">singleFactorBound(p)</span></code> returns a bound on the infinite norm of the factor of <code class="docutils literal notranslate"><span class="pre">p</span></code> with smallest Bombieri<code class="docutils literal notranslate"><span class="pre">'s</span></code> norm. <code class="docutils literal notranslate"><span class="pre">p</span></code> shall be of degree higher or equal to 2.</p>
+<dt><span class="spadfun">singleFactorBound</span>: UP -&gt; <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">singleFactorBound(p)</span></code> returns a bound on the infinite norm of the factor of <code class="code docutils literal notranslate"><span class="pre">p</span></code> with smallest Bombieri<code class="code docutils literal notranslate"><span class="pre">'s</span></code> norm. <code class="code docutils literal notranslate"><span class="pre">p</span></code> shall be of degree higher or equal to 2.</p>
 </dd>
 </dl>
 </section>
@@ -110,6 +110,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -150,7 +151,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

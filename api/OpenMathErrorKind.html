@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,8 +45,8 @@
             
   <section id="openmatherrorkind">
 <span id="l4f70656e4d6174684572726f724b696e64"></span><span id="index-0"></span><h1>OpenMathErrorKind<a class="headerlink" href="#openmatherrorkind" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/omerror.spad#L1">omerror.spad line 1</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/omerror.spad#L1">[edit on github]</a></p>
-<p><a class="reference internal" href="#l4f70656e4d6174684572726f724b696e64"><span class="std std-ref">OpenMathErrorKind</span></a> represents different kinds of OpenMath errors: specifically parse errors, unknown <code class="docutils literal notranslate"><span class="pre">CD</span></code> or symbol errors, and read errors.</p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/omerror.spad#L1">omerror.spad line 1</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/omerror.spad#L1">[edit on github]</a></p>
+<p><a class="reference internal" href="#l4f70656e4d6174684572726f724b696e64"><span class="std std-ref">OpenMathErrorKind</span></a> represents different kinds of OpenMath errors: specifically parse errors, unknown <code class="code docutils literal notranslate"><span class="pre">CD</span></code> or symbol errors, and read errors.</p>
 <dl class="simple" id="l4f70656e4d6174684572726f724b696e64-3d">
 <dt><a class="reference internal" href="BasicType.html#l426173696354797065-3d"><span class="std std-ref">=</span></a>: (%, %) -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p>from <a class="reference internal" href="BasicType.html#l426173696354797065"><span class="std std-ref">BasicType</span></a></p>
 </dd>
@@ -60,7 +60,7 @@
 </dd>
 </dl>
 <dl class="simple" id="index-1">
-<dt><span class="spadfun">coerce</span>: <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a> -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">coerce(u)</span></code> creates an OpenMath error object of an appropriate type if <code class="docutils literal notranslate"><span class="pre">u</span></code> is one of <code class="docutils literal notranslate"><span class="pre">OMParseError</span></code>, <code class="docutils literal notranslate"><span class="pre">OMReadError</span></code>, <code class="docutils literal notranslate"><span class="pre">OMUnknownCD</span></code> or <code class="docutils literal notranslate"><span class="pre">OMUnknownSymbol</span></code>, otherwise it raises a runtime error.</p>
+<dt><span class="spadfun">coerce</span>: <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a> -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">coerce(u)</span></code> creates an OpenMath error object of an appropriate type if <code class="code docutils literal notranslate"><span class="pre">u</span></code> is one of <code class="code docutils literal notranslate"><span class="pre">OMParseError</span></code>, <code class="code docutils literal notranslate"><span class="pre">OMReadError</span></code>, <code class="code docutils literal notranslate"><span class="pre">OMUnknownCD</span></code> or <code class="code docutils literal notranslate"><span class="pre">OMUnknownSymbol</span></code>, otherwise it raises a runtime error.</p>
 </dd>
 </dl>
 <dl class="simple" id="l4f70656e4d6174684572726f724b696e64-6c61746578">
@@ -68,19 +68,19 @@
 </dd>
 </dl>
 <span id="l4f70656e4d6174684572726f724b696e64-4f4d50617273654572726f723f"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">OMParseError?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">OMParseError?(u)</span></code> tests whether <code class="docutils literal notranslate"><span class="pre">u</span></code> is an OpenMath parsing error.</p>
+<dt><span class="spadfun">OMParseError?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">OMParseError?(u)</span></code> tests whether <code class="code docutils literal notranslate"><span class="pre">u</span></code> is an OpenMath parsing error.</p>
 </dd>
 </dl>
 <span id="l4f70656e4d6174684572726f724b696e64-4f4d526561644572726f723f"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">OMReadError?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">OMReadError?(u)</span></code> tests whether <code class="docutils literal notranslate"><span class="pre">u</span></code> is an OpenMath read error.</p>
+<dt><span class="spadfun">OMReadError?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">OMReadError?(u)</span></code> tests whether <code class="code docutils literal notranslate"><span class="pre">u</span></code> is an OpenMath read error.</p>
 </dd>
 </dl>
 <span id="l4f70656e4d6174684572726f724b696e64-4f4d556e6b6e6f776e43443f"></span><dl class="simple" id="index-4">
-<dt><span class="spadfun">OMUnknownCD?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">OMUnknownCD?(u)</span></code> tests whether <code class="docutils literal notranslate"><span class="pre">u</span></code> is an OpenMath unknown <code class="docutils literal notranslate"><span class="pre">CD</span></code> error.</p>
+<dt><span class="spadfun">OMUnknownCD?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">OMUnknownCD?(u)</span></code> tests whether <code class="code docutils literal notranslate"><span class="pre">u</span></code> is an OpenMath unknown <code class="code docutils literal notranslate"><span class="pre">CD</span></code> error.</p>
 </dd>
 </dl>
 <span id="l4f70656e4d6174684572726f724b696e64-4f4d556e6b6e6f776e53796d626f6c3f"></span><dl class="simple" id="index-5">
-<dt><span class="spadfun">OMUnknownSymbol?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">OMUnknownSymbol?(u)</span></code> tests whether <code class="docutils literal notranslate"><span class="pre">u</span></code> is an OpenMath unknown symbol error.</p>
+<dt><span class="spadfun">OMUnknownSymbol?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">OMUnknownSymbol?(u)</span></code> tests whether <code class="code docutils literal notranslate"><span class="pre">u</span></code> is an OpenMath unknown symbol error.</p>
 </dd>
 </dl>
 <p><a class="reference internal" href="BasicType.html#l426173696354797065"><span class="std std-ref">BasicType</span></a></p>
@@ -100,6 +100,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -140,7 +141,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

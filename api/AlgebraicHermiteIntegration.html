@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,20 +45,20 @@
             
   <section id="algebraichermiteintegration-f-up-upup-r">
 <span id="l416c676562726169634865726d697465496e746567726174696f6e"></span><span id="index-0"></span><h1>AlgebraicHermiteIntegration(F, UP, UPUP, R)<a class="headerlink" href="#algebraichermiteintegration-f-up-upup-r" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/intalg.spad#L50">intalg.spad line 50</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/intalg.spad#L50">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/intalg.spad#L50">intalg.spad line 50</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/intalg.spad#L50">[edit on github]</a></p>
 <ul class="simple">
 <li><p>F: <a class="reference internal" href="Field.html#l4669656c64"><span class="std std-ref">Field</span></a></p></li>
 <li><p>UP: <a class="reference internal" href="UnivariatePolynomialCategory.html#l556e6976617269617465506f6c796e6f6d69616c43617465676f7279"><span class="std std-ref">UnivariatePolynomialCategory</span></a> F</p></li>
 <li><p>UPUP: <a class="reference internal" href="UnivariatePolynomialCategory.html#l556e6976617269617465506f6c796e6f6d69616c43617465676f7279"><span class="std std-ref">UnivariatePolynomialCategory</span></a> <a class="reference internal" href="Fraction.html#l4672616374696f6e"><span class="std std-ref">Fraction</span></a> UP</p></li>
 <li><p>R: <a class="reference internal" href="FunctionFieldCategory.html#l46756e6374696f6e4669656c6443617465676f7279"><span class="std std-ref">FunctionFieldCategory</span></a>(F, UP, UPUP)</p></li>
 </ul>
-<p>algebraic Hermite redution.</p>
+<p>algebraic Hermite reduction.</p>
 <span id="l416c676562726169634865726d697465496e746567726174696f6e-4865726d697465496e74656772617465"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">HermiteIntegrate</span>: (R, UP -&gt; UP) -&gt; Record(answer: R, logpart: R)</dt><dd><p><code class="docutils literal notranslate"><span class="pre">HermiteIntegrate(f,</span> <span class="pre">')</span></code> returns <code class="docutils literal notranslate"><span class="pre">[g,</span> <span class="pre">h]</span></code> such that <code class="docutils literal notranslate"><span class="pre">f</span> <span class="pre">=</span> <span class="pre">g'</span> <span class="pre">+</span> <span class="pre">h</span></code> and <code class="docutils literal notranslate"><span class="pre">h</span></code> has a only simple finite normal poles.</p>
+<dt><span class="spadfun">HermiteIntegrate</span>: (R, UP -&gt; UP) -&gt; Record(answer: R, logpart: R)</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">HermiteIntegrate(f,</span> <span class="pre">')</span></code> returns <code class="code docutils literal notranslate"><span class="pre">[g,</span> <span class="pre">h]</span></code> such that <code class="code docutils literal notranslate"><span class="pre">f</span> <span class="pre">=</span> <span class="pre">g'</span> <span class="pre">+</span> <span class="pre">h</span></code> and <code class="code docutils literal notranslate"><span class="pre">h</span></code> has a only simple finite normal poles.</p>
 </dd>
 </dl>
 <dl class="simple" id="index-2">
-<dt><span class="spadfun">HermiteIntegrate</span>: (R, UP -&gt; UP, R) -&gt; Record(answer: R, logpart: R)</dt><dd><p><code class="docutils literal notranslate"><span class="pre">HermiteIntegrate(f,</span> <span class="pre">',</span> <span class="pre">d0)</span></code> returns <code class="docutils literal notranslate"><span class="pre">[g,</span> <span class="pre">h]</span></code> such that <code class="docutils literal notranslate"><span class="pre">f</span> <span class="pre">=</span> <span class="pre">g'</span> <span class="pre">+</span> <span class="pre">d0*g</span> <span class="pre">+</span> <span class="pre">h</span></code> and <code class="docutils literal notranslate"><span class="pre">h</span></code> has a only simple finite normal poles. Note: <code class="docutils literal notranslate"><span class="pre">d0</span></code> must be integral.</p>
+<dt><span class="spadfun">HermiteIntegrate</span>: (R, UP -&gt; UP, R) -&gt; Record(answer: R, logpart: R)</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">HermiteIntegrate(f,</span> <span class="pre">',</span> <span class="pre">d0)</span></code> returns <code class="code docutils literal notranslate"><span class="pre">[g,</span> <span class="pre">h]</span></code> such that <code class="code docutils literal notranslate"><span class="pre">f</span> <span class="pre">=</span> <span class="pre">g'</span> <span class="pre">+</span> <span class="pre">d0*g</span> <span class="pre">+</span> <span class="pre">h</span></code> and <code class="code docutils literal notranslate"><span class="pre">h</span></code> has a only simple finite normal poles. Note: <code class="code docutils literal notranslate"><span class="pre">d0</span></code> must be integral.</p>
 </dd>
 </dl>
 </section>
@@ -75,6 +75,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -115,7 +116,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

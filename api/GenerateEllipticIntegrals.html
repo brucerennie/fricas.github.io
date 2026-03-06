@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="generateellipticintegrals-f-up-upup-r">
 <span id="l47656e6572617465456c6c6970746963496e74656772616c73"></span><span id="index-0"></span><h1>GenerateEllipticIntegrals(F, UP, UPUP, R)<a class="headerlink" href="#generateellipticintegrals-f-up-upup-r" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/intspec.spad#L1">intspec.spad line 1</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/intspec.spad#L1">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/intspec.spad#L1">intspec.spad line 1</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/intspec.spad#L1">[edit on github]</a></p>
 <ul class="simple">
 <li><p>F: Join(<a class="reference internal" href="Field.html#l4669656c64"><span class="std std-ref">Field</span></a>, <a class="reference internal" href="RetractableTo.html#l5265747261637461626c65546f"><span class="std std-ref">RetractableTo</span></a> <a class="reference internal" href="Fraction.html#l4672616374696f6e"><span class="std std-ref">Fraction</span></a> <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a>)</p></li>
 <li><p>UP: <a class="reference internal" href="UnivariatePolynomialCategory.html#l556e6976617269617465506f6c796e6f6d69616c43617465676f7279"><span class="std std-ref">UnivariatePolynomialCategory</span></a> F</p></li>
@@ -54,15 +54,15 @@
 </ul>
 <p>This package provides support functions for generating elliptic integrals.</p>
 <span id="l47656e6572617465456c6c6970746963496e74656772616c73-6673717274"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">fsqrt</span>: F -&gt; F</dt><dd><p><code class="docutils literal notranslate"><span class="pre">fsqrt(f)</span></code> should be local but conditional</p>
+<dt><span class="spadfun">fsqrt</span>: F -&gt; F</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">fsqrt(f)</span></code> should be local but conditional</p>
 </dd>
 </dl>
 <span id="l47656e6572617465456c6c6970746963496e74656772616c73-67656e5f6566"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">gen_ef</span>: (F, UP, R, R) -&gt; Union(Record(result1: <a class="reference internal" href="Fraction.html#l4672616374696f6e"><span class="std std-ref">Fraction</span></a> UP, result2: F), failed)</dt><dd><p><code class="docutils literal notranslate"><span class="pre">gen_ef(f_var,</span> <span class="pre">f_pol,</span> <span class="pre">cfr,</span> <span class="pre">cer)</span></code> produces linear combination</p>
+<dt><span class="spadfun">gen_ef</span>: (F, UP, R, R) -&gt; Union(Record(result1: <a class="reference internal" href="Fraction.html#l4672616374696f6e"><span class="std std-ref">Fraction</span></a> UP, result2: F), failed)</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">gen_ef(f_var,</span> <span class="pre">f_pol,</span> <span class="pre">cfr,</span> <span class="pre">cer)</span></code> produces linear combination</p>
 </dd>
 </dl>
 <span id="l47656e6572617465456c6c6970746963496e74656772616c73-6765745f656c6c697074696373"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">get_elliptics</span>: (UP -&gt; UP, F) -&gt; <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> Record(f_form: R, e_form: R, f_var: F, f_pol: UP)</dt><dd><p><code class="docutils literal notranslate"><span class="pre">get_elliptics(der,</span> <span class="pre">x)</span></code> tries to find elliptic forms on <code class="docutils literal notranslate"><span class="pre">R</span></code> <code class="docutils literal notranslate"><span class="pre">x</span></code> is expression for variable of integration in <code class="docutils literal notranslate"><span class="pre">F</span></code></p>
+<dt><span class="spadfun">get_elliptics</span>: (UP -&gt; UP, F) -&gt; <a class="reference internal" href="List.html#l4c697374"><span class="std std-ref">List</span></a> Record(f_form: R, e_form: R, f_var: F, f_pol: UP)</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">get_elliptics(der,</span> <span class="pre">x)</span></code> tries to find elliptic forms on <code class="code docutils literal notranslate"><span class="pre">R</span></code> <code class="code docutils literal notranslate"><span class="pre">x</span></code> is expression for variable of integration in <code class="code docutils literal notranslate"><span class="pre">F</span></code></p>
 </dd>
 </dl>
 </section>
@@ -79,6 +79,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -119,7 +120,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

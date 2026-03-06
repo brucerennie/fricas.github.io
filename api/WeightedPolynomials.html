@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="weightedpolynomials-r-varset-e-p-vl-wl-wtlevel">
 <span id="l5765696768746564506f6c796e6f6d69616c73"></span><span id="index-0"></span><h1>WeightedPolynomials(R, VarSet, E, P, vl, wl, wtlevel)<a class="headerlink" href="#weightedpolynomials-r-varset-e-p-vl-wl-wtlevel" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/wtpol.spad#L1">wtpol.spad line 1</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/wtpol.spad#L1">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/wtpol.spad#L1">wtpol.spad line 1</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/wtpol.spad#L1">[edit on github]</a></p>
 <ul class="simple">
 <li><p>R: <a class="reference internal" href="Ring.html#l52696e67"><span class="std std-ref">Ring</span></a></p></li>
 <li><p>VarSet: <a class="reference internal" href="OrderedSet.html#l4f726465726564536574"><span class="std std-ref">OrderedSet</span></a></p></li>
@@ -89,7 +89,7 @@
 </dd>
 </dl>
 <span id="l5765696768746564506f6c796e6f6d69616c73-2f"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">/</span>: (%, %) -&gt; Union(%, failed) if R has <a class="reference internal" href="Field.html#l4669656c64"><span class="std std-ref">Field</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">x/y</span></code> division (only works if minimum weight of divisor is zero, and if <code class="docutils literal notranslate"><span class="pre">R</span></code> is a Field)</p>
+<dt><span class="spadfun">/</span>: (%, %) -&gt; Union(%, failed) if R has <a class="reference internal" href="Field.html#l4669656c64"><span class="std std-ref">Field</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">x/y</span></code> division (only works if minimum weight of divisor is zero, and if <code class="code docutils literal notranslate"><span class="pre">R</span></code> is a Field)</p>
 </dd>
 </dl>
 <dl class="simple" id="l5765696768746564506f6c796e6f6d69616c73-3d">
@@ -119,7 +119,7 @@
 </dd>
 </dl>
 <span id="l5765696768746564506f6c796e6f6d69616c73-6368616e67655765696768744c6576656c"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">changeWeightLevel</span>: <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a> -&gt; <a class="reference internal" href="Void.html#l566f6964"><span class="std std-ref">Void</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">changeWeightLevel(n)</span></code> changes the weight level to the new value given: <code class="docutils literal notranslate"><span class="pre">NB:</span></code> previously calculated terms are not affected</p>
+<dt><span class="spadfun">changeWeightLevel</span>: <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a> -&gt; <a class="reference internal" href="Void.html#l566f6964"><span class="std std-ref">Void</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">changeWeightLevel(n)</span></code> changes the weight level to the new value given: <code class="code docutils literal notranslate"><span class="pre">NB:</span></code> previously calculated terms are not affected</p>
 </dd>
 </dl>
 <dl class="simple" id="l5765696768746564506f6c796e6f6d69616c73-6368617261637465726973746963">
@@ -131,13 +131,13 @@
 </dd>
 </dl>
 <dl class="simple" id="index-3">
-<dt><span class="spadfun">coerce</span>: % -&gt; P</dt><dd><p>convert back into a <code class="docutils literal notranslate"><span class="pre">&quot;P&quot;</span></code>, ignoring weights</p>
+<dt><span class="spadfun">coerce</span>: % -&gt; P</dt><dd><p>convert back into a <code class="code docutils literal notranslate"><span class="pre">&quot;P&quot;</span></code>, ignoring weights</p>
 </dd>
 <dt><a class="reference internal" href="NonAssociativeRing.html#l4e6f6e4173736f6369617469766552696e67-636f65726365"><span class="std std-ref">coerce</span></a>: <a class="reference internal" href="Integer.html#l496e7465676572"><span class="std std-ref">Integer</span></a> -&gt; %</dt><dd><p>from <a class="reference internal" href="NonAssociativeRing.html#l4e6f6e4173736f6369617469766552696e67"><span class="std std-ref">NonAssociativeRing</span></a></p>
 </dd>
 </dl>
 <dl class="simple" id="index-4">
-<dt><span class="spadfun">coerce</span>: P -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">coerce(p)</span></code> coerces <code class="docutils literal notranslate"><span class="pre">p</span></code> into Weighted form, applying weights and ignoring terms</p>
+<dt><span class="spadfun">coerce</span>: P -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">coerce(p)</span></code> coerces <code class="code docutils literal notranslate"><span class="pre">p</span></code> into Weighted form, applying weights and ignoring terms</p>
 </dd>
 <dt><a class="reference internal" href="Algebra.html#l416c6765627261-636f65726365"><span class="std std-ref">coerce</span></a>: R -&gt; % if R has <a class="reference internal" href="CommutativeRing.html#l436f6d6d7574617469766552696e67"><span class="std std-ref">CommutativeRing</span></a></dt><dd><p>from <a class="reference internal" href="Algebra.html#l416c6765627261"><span class="std std-ref">Algebra</span></a> R</p>
 </dd>
@@ -241,6 +241,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -281,7 +282,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

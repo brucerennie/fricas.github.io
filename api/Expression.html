@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="expression-r">
 <span id="l45787072657373696f6e"></span><span id="index-0"></span><h1>Expression R<a class="headerlink" href="#expression-r" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/expr.spad#L1">expr.spad line 1</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/expr.spad#L1">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/expr.spad#L1">expr.spad line 1</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/expr.spad#L1">[edit on github]</a></p>
 <ul class="simple">
 <li><p>R: <a class="reference internal" href="Comparable.html#l436f6d70617261626c65"><span class="std std-ref">Comparable</span></a></p></li>
 </ul>
@@ -267,7 +267,7 @@
 </dd>
 </dl>
 <dl class="simple" id="l45787072657373696f6e-636861727468526f6f74">
-<dt><a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f-636861727468526f6f74"><span class="std std-ref">charthRoot</span></a>: % -&gt; Union(%, failed) if % has <a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f"><span class="std std-ref">CharacteristicNonZero</span></a> and R has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a> and R has <a class="reference internal" href="PolynomialFactorizationExplicit.html#l506f6c796e6f6d69616c466163746f72697a6174696f6e4578706c69636974"><span class="std std-ref">PolynomialFactorizationExplicit</span></a> or R has <a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f"><span class="std std-ref">CharacteristicNonZero</span></a></dt><dd><p>from <a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f"><span class="std std-ref">CharacteristicNonZero</span></a></p>
+<dt><a class="reference internal" href="PolynomialFactorizationExplicit.html#l506f6c796e6f6d69616c466163746f72697a6174696f6e4578706c69636974-636861727468526f6f74"><span class="std std-ref">charthRoot</span></a>: % -&gt; Union(%, failed) if % has <a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f"><span class="std std-ref">CharacteristicNonZero</span></a> and R has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a> and R has <a class="reference internal" href="PolynomialFactorizationExplicit.html#l506f6c796e6f6d69616c466163746f72697a6174696f6e4578706c69636974"><span class="std std-ref">PolynomialFactorizationExplicit</span></a></dt><dd><p>from <a class="reference internal" href="PolynomialFactorizationExplicit.html#l506f6c796e6f6d69616c466163746f72697a6174696f6e4578706c69636974"><span class="std std-ref">PolynomialFactorizationExplicit</span></a></p>
 </dd>
 </dl>
 <dl class="simple" id="l45787072657373696f6e-436869">
@@ -591,7 +591,7 @@
 </dd>
 </dl>
 <span id="l45787072657373696f6e-67657453696d706c69667944656e6f6d73466c6167"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">getSimplifyDenomsFlag</span>: () -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a> if R has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">getSimplifyDenomsFlag()</span></code> gets values of flag affecting simplification of denominators. See setSimplifyDenomsFlag.</p>
+<dt><span class="spadfun">getSimplifyDenomsFlag</span>: () -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a> if R has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">getSimplifyDenomsFlag()</span></code> gets value of flag affecting simplification of denominators. See setSimplifyDenomsFlag.</p>
 </dd>
 </dl>
 <dl class="simple" id="l45787072657373696f6e-67726f756e643f">
@@ -835,7 +835,7 @@
 </dd>
 </dl>
 <span id="l45787072657373696f6e-6e756d6265723f"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">number?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a> if R has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">number?(f)</span></code> tests if <code class="docutils literal notranslate"><span class="pre">f</span></code> is rational</p>
+<dt><span class="spadfun">number?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a> if R has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">number?(f)</span></code> tests if <code class="code docutils literal notranslate"><span class="pre">f</span></code> is rational</p>
 </dd>
 </dl>
 <dl class="simple" id="l45787072657373696f6e-6e756d6572">
@@ -923,7 +923,7 @@
 </dd>
 </dl>
 <span id="l45787072657373696f6e-726564756365"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">reduce</span>: % -&gt; % if R has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">reduce(f)</span></code> simplifies all the unreduced algebraic quantities present in <code class="docutils literal notranslate"><span class="pre">f</span></code> by applying their defining relations.</p>
+<dt><span class="spadfun">reduce</span>: % -&gt; % if R has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">reduce(f)</span></code> simplifies all the unreduced algebraic quantities present in <code class="code docutils literal notranslate"><span class="pre">f</span></code> by applying their defining relations.</p>
 </dd>
 </dl>
 <dl class="simple" id="l45787072657373696f6e-7265647563656453797374656d">
@@ -1031,7 +1031,7 @@
 </dd>
 </dl>
 <span id="l45787072657373696f6e-73657453696d706c69667944656e6f6d73466c6167"></span><dl class="simple" id="index-4">
-<dt><span class="spadfun">setSimplifyDenomsFlag</span>: <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a> -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a> if R has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">setSimplifyDenomsFlag(x)</span></code> sets flag affecting simplification of denominators. If <code class="docutils literal notranslate"><span class="pre">true</span></code> irrational algebraics are removed from denominators. If <code class="docutils literal notranslate"><span class="pre">false</span></code> they are kept.</p>
+<dt><span class="spadfun">setSimplifyDenomsFlag</span>: <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a> -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a> if R has <a class="reference internal" href="IntegralDomain.html#l496e74656772616c446f6d61696e"><span class="std std-ref">IntegralDomain</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">setSimplifyDenomsFlag(x)</span></code> sets flag affecting simplification of denominators. If <code class="code docutils literal notranslate"><span class="pre">true</span></code> irrational algebraics are removed from denominators. If <code class="code docutils literal notranslate"><span class="pre">false</span></code> they are kept.</p>
 </dd>
 </dl>
 <dl class="simple" id="l45787072657373696f6e-536869">
@@ -1334,6 +1334,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -1374,7 +1375,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

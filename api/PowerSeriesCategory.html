@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="powerseriescategory-coef-expon-var">
 <span id="l506f77657253657269657343617465676f7279"></span><span id="index-0"></span><h1>PowerSeriesCategory(Coef, Expon, Var)<a class="headerlink" href="#powerseriescategory-coef-expon-var" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/pscat.spad#L1">pscat.spad line 1</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/pscat.spad#L1">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/pscat.spad#L1">pscat.spad line 1</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/pscat.spad#L1">[edit on github]</a></p>
 <ul class="simple">
 <li><p>Coef: <a class="reference internal" href="Ring.html#l52696e67"><span class="std std-ref">Ring</span></a></p></li>
 <li><p>Expon: <a class="reference internal" href="OrderedAbelianMonoid.html#l4f7264657265644162656c69616e4d6f6e6f6964"><span class="std std-ref">OrderedAbelianMonoid</span></a></p></li>
@@ -126,10 +126,6 @@
 <dt><a class="reference internal" href="NonAssociativeRing.html#l4e6f6e4173736f6369617469766552696e67-6368617261637465726973746963"><span class="std std-ref">characteristic</span></a>: () -&gt; <a class="reference internal" href="NonNegativeInteger.html#l4e6f6e4e65676174697665496e7465676572"><span class="std std-ref">NonNegativeInteger</span></a></dt><dd><p>from <a class="reference internal" href="NonAssociativeRing.html#l4e6f6e4173736f6369617469766552696e67"><span class="std std-ref">NonAssociativeRing</span></a></p>
 </dd>
 </dl>
-<dl class="simple" id="l506f77657253657269657343617465676f7279-636861727468526f6f74">
-<dt><a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f-636861727468526f6f74"><span class="std std-ref">charthRoot</span></a>: % -&gt; Union(%, failed) if Coef has <a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f"><span class="std std-ref">CharacteristicNonZero</span></a></dt><dd><p>from <a class="reference internal" href="CharacteristicNonZero.html#l43686172616374657269737469634e6f6e5a65726f"><span class="std std-ref">CharacteristicNonZero</span></a></p>
-</dd>
-</dl>
 <dl class="simple" id="l506f77657253657269657343617465676f7279-636f656666696369656e74">
 <dt><a class="reference internal" href="AbelianMonoidRing.html#l4162656c69616e4d6f6e6f696452696e67-636f656666696369656e74"><span class="std std-ref">coefficient</span></a>: (%, Expon) -&gt; Coef</dt><dd><p>from <a class="reference internal" href="AbelianMonoidRing.html#l4162656c69616e4d6f6e6f696452696e67"><span class="std std-ref">AbelianMonoidRing</span></a>(Coef, Expon)</p>
 </dd>
@@ -151,7 +147,7 @@
 </dd>
 </dl>
 <span id="l506f77657253657269657343617465676f7279-636f6d706c657465"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">complete</span>: % -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">complete(f)</span></code> causes all terms of <code class="docutils literal notranslate"><span class="pre">f</span></code> to be computed. Note: this results in an infinite loop if <code class="docutils literal notranslate"><span class="pre">f</span></code> has infinitely many terms.</p>
+<dt><span class="spadfun">complete</span>: % -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">complete(f)</span></code> causes all terms of <code class="code docutils literal notranslate"><span class="pre">f</span></code> to be computed. Note: this results in an infinite loop if <code class="code docutils literal notranslate"><span class="pre">f</span></code> has infinitely many terms.</p>
 </dd>
 </dl>
 <dl class="simple" id="l506f77657253657269657343617465676f7279-636f6e737472756374">
@@ -163,7 +159,7 @@
 </dd>
 </dl>
 <span id="l506f77657253657269657343617465676f7279-646567726565"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">degree</span>: % -&gt; Expon</dt><dd><p><code class="docutils literal notranslate"><span class="pre">degree(f)</span></code> returns the exponent of the lowest order term of <code class="docutils literal notranslate"><span class="pre">f</span></code>.</p>
+<dt><span class="spadfun">degree</span>: % -&gt; Expon</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">degree(f)</span></code> returns the exponent of the lowest order term of <code class="code docutils literal notranslate"><span class="pre">f</span></code>.</p>
 </dd>
 </dl>
 <dl class="simple" id="l506f77657253657269657343617465676f7279-657871756f">
@@ -175,11 +171,11 @@
 </dd>
 </dl>
 <span id="l506f77657253657269657343617465676f7279-6c656164696e67436f656666696369656e74"></span><dl class="simple" id="index-3">
-<dt><span class="spadfun">leadingCoefficient</span>: % -&gt; Coef</dt><dd><p><code class="docutils literal notranslate"><span class="pre">leadingCoefficient(f)</span></code> returns the coefficient of the lowest order term of <code class="docutils literal notranslate"><span class="pre">f</span></code></p>
+<dt><span class="spadfun">leadingCoefficient</span>: % -&gt; Coef</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">leadingCoefficient(f)</span></code> returns the coefficient of the lowest order term of <code class="code docutils literal notranslate"><span class="pre">f</span></code></p>
 </dd>
 </dl>
 <span id="l506f77657253657269657343617465676f7279-6c656164696e674d6f6e6f6d69616c"></span><dl class="simple" id="index-4">
-<dt><span class="spadfun">leadingMonomial</span>: % -&gt; %</dt><dd><p><code class="docutils literal notranslate"><span class="pre">leadingMonomial(f)</span></code> returns the monomial of <code class="docutils literal notranslate"><span class="pre">f</span></code> of lowest order.</p>
+<dt><span class="spadfun">leadingMonomial</span>: % -&gt; %</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">leadingMonomial(f)</span></code> returns the monomial of <code class="code docutils literal notranslate"><span class="pre">f</span></code> of lowest order.</p>
 </dd>
 </dl>
 <dl class="simple" id="l506f77657253657269657343617465676f7279-6c656164696e67537570706f7274">
@@ -225,7 +221,7 @@
 </dd>
 </dl>
 <span id="l506f77657253657269657343617465676f7279-706f6c653f"></span><dl class="simple" id="index-5">
-<dt><span class="spadfun">pole?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="docutils literal notranslate"><span class="pre">pole?(f)</span></code> determines if the power series <code class="docutils literal notranslate"><span class="pre">f</span></code> has a pole.</p>
+<dt><span class="spadfun">pole?</span>: % -&gt; <a class="reference internal" href="Boolean.html#l426f6f6c65616e"><span class="std std-ref">Boolean</span></a></dt><dd><p><code class="code docutils literal notranslate"><span class="pre">pole?(f)</span></code> determines if the power series <code class="code docutils literal notranslate"><span class="pre">f</span></code> has a pole.</p>
 </dd>
 </dl>
 <dl class="simple" id="l506f77657253657269657343617465676f7279-7265636970">
@@ -334,6 +330,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -374,7 +371,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>

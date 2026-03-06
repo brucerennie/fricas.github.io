@@ -10,7 +10,7 @@
     <link rel="stylesheet" type="text/css" href="../_static/classic.css?v=2bf1fcf8" />
     <link rel="stylesheet" href="../_static/style.css" type="text/css" />
     
-    <script src="../_static/documentation_options.js?v=93b43ced"></script>
+    <script src="../_static/documentation_options.js?v=37ccb8f4"></script>
     <script src="../_static/doctools.js?v=9bcbadda"></script>
     <script src="../_static/sphinx_highlight.js?v=dc90522c"></script>
     
@@ -45,7 +45,7 @@
             
   <section id="makebinarycompiledfunction-s-d1-d2-i">
 <span id="l4d616b6542696e617279436f6d70696c656446756e6374696f6e"></span><span id="index-0"></span><h1>MakeBinaryCompiledFunction(S, D1, D2, I)<a class="headerlink" href="#makebinarycompiledfunction-s-d1-d2-i" title="Link to this heading">¶</a></h1>
-<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/master/src/algebra/mkfunc.spad#L302">mkfunc.spad line 302</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/master/src/algebra/mkfunc.spad#L302">[edit on github]</a></p>
+<p><a class="extlink-viewcode reference external" href="https://github.com/fricas/fricas/blob/r1.3.13/src/algebra/mkfunc.spad#L302">mkfunc.spad line 302</a> <a class="extlink-editcode reference external" href="https://github.com/fricas/fricas/edit/r1.3.13/src/algebra/mkfunc.spad#L302">[edit on github]</a></p>
 <ul class="simple">
 <li><p>S: <a class="reference internal" href="ConvertibleTo.html#l436f6e7665727469626c65546f"><span class="std std-ref">ConvertibleTo</span></a> <a class="reference internal" href="InputForm.html#l496e707574466f726d"><span class="std std-ref">InputForm</span></a></p></li>
 <li><p>D1: <a class="reference internal" href="Type.html#l54797065"><span class="std std-ref">Type</span></a></p></li>
@@ -54,11 +54,11 @@
 </ul>
 <p>transforms top-level objects into compiled functions.</p>
 <span id="l4d616b6542696e617279436f6d70696c656446756e6374696f6e-62696e61727946756e6374696f6e"></span><dl class="simple" id="index-1">
-<dt><span class="spadfun">binaryFunction</span>: <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a> -&gt; (D1, D2) -&gt; I</dt><dd><p><code class="docutils literal notranslate"><span class="pre">binaryFunction(s)</span></code> is a local function</p>
+<dt><span class="spadfun">binaryFunction</span>: <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a> -&gt; (D1, D2) -&gt; I</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">binaryFunction(s)</span></code> is a local function</p>
 </dd>
 </dl>
 <span id="l4d616b6542696e617279436f6d70696c656446756e6374696f6e-636f6d70696c656446756e6374696f6e"></span><dl class="simple" id="index-2">
-<dt><span class="spadfun">compiledFunction</span>: (S, <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a>, <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a>) -&gt; (D1, D2) -&gt; I</dt><dd><p><code class="docutils literal notranslate"><span class="pre">compiledFunction(expr,</span> <span class="pre">x,</span> <span class="pre">y)</span></code> returns a function <code class="docutils literal notranslate"><span class="pre">f:</span> <span class="pre">(D1,</span> <span class="pre">D2)</span> <span class="pre">-&gt;</span> <span class="pre">I</span></code> defined by <code class="docutils literal notranslate"><span class="pre">f(x,</span> <span class="pre">y)</span> <span class="pre">==</span> <span class="pre">expr</span></code>. Function <code class="docutils literal notranslate"><span class="pre">f</span></code> is compiled and directly applicable to objects of type <code class="docutils literal notranslate"><span class="pre">(D1,</span> <span class="pre">D2)</span></code></p>
+<dt><span class="spadfun">compiledFunction</span>: (S, <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a>, <a class="reference internal" href="Symbol.html#l53796d626f6c"><span class="std std-ref">Symbol</span></a>) -&gt; (D1, D2) -&gt; I</dt><dd><p><code class="code docutils literal notranslate"><span class="pre">compiledFunction(expr,</span> <span class="pre">x,</span> <span class="pre">y)</span></code> returns a function <code class="code docutils literal notranslate"><span class="pre">f:</span> <span class="pre">(D1,</span> <span class="pre">D2)</span> <span class="pre">-&gt;</span> <span class="pre">I</span></code> defined by <code class="code docutils literal notranslate"><span class="pre">f(x,</span> <span class="pre">y)</span> <span class="pre">==</span> <span class="pre">expr</span></code>. Function <code class="code docutils literal notranslate"><span class="pre">f</span></code> is compiled and directly applicable to objects of type <code class="code docutils literal notranslate"><span class="pre">(D1,</span> <span class="pre">D2)</span></code></p>
 </dd>
 </dl>
 </section>
@@ -75,6 +75,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">FriCAS API</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../features.html">Features</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../download.html">Download</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../install.html">Installation Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../help.html">Help</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../examples.html">Examples</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../development.html">Development</a></li>
@@ -115,7 +116,7 @@
       </ul>
     </div>
     <div class="footer" role="contentinfo">
-    &#169; Copyright 2007-2025, FriCAS Team.
+    &#169; Copyright 2007-2026, FriCAS Team.
     </div>
   </body>
 </html>
